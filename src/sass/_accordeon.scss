@@ -1,0 +1,101 @@
+.accordeon {
+
+}
+
+.accordeon__container {
+
+}
+
+.accordeon__box {
+	margin-top: 80px;
+	margin-bottom: 100px;
+
+	@media screen and (max-width: $break_sm) {
+		margin-top: 30px;
+		margin-bottom: 35px;
+	}
+}
+
+.accordeon__item {
+
+}
+
+.accordeon__title {
+	position: relative;
+	z-index: 2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	font-weight: 600;
+	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+
+	background-color: #fff;
+	border-bottom: 1px solid #2C2C2C;
+	cursor: pointer;
+
+	@media screen and (max-width: $break_sm) {
+		font-size: 20px;
+	}
+
+	span {
+		position: relative;
+
+		display: inline-block;
+		padding-right: 32px;
+
+		&::after {
+			position: absolute;
+			content: '';
+			right: 0;
+			top: 4px;
+			z-index: 1;
+
+			width: 20px;
+			height: 20px;
+
+			transform: rotate(90deg);
+			transition: .25s;
+
+			background-size: cover;
+			background-position: center;
+			background-image: url('../img/arrov-nav-link-title.svg');
+		}
+	}
+}
+
+.accordeon__title--active {
+	span {
+		&::after {
+			transform: rotate(-90deg);
+		}
+	}
+}
+
+.accordeon__content {
+	position: relative;
+	z-index: 1;
+	padding-top: 26px;
+	padding-bottom: 26px;
+	opacity: 1;
+	height: auto;
+	background-color: #fff;
+	transform: scaleY(1);
+	transform-origin: top;
+	transition: opacity .1s, height .25s, transform .25s;
+
+	.catalog {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+}
+
+.accordeon__content--hidden {
+	opacity: 0;
+	transform: scaleY(0);
+	height: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	// z-index: -1;
+}

@@ -1,0 +1,18 @@
+//- добавить категории с сайта
+//- выгрузить и показать Эрне
+
+
+include ../includes/mixins
+
+//- Для pageType указать тип страницы
+- var pageType = 'index';
+
+
+//- home - главная страница
+if pageType === 'home'
+	include home
+
+//- index - для показа верстки
+if pageType === 'index'
+	include verstka
+

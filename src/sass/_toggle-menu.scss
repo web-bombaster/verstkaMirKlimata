@@ -1,0 +1,13 @@
+.toggle-menu {
+
+}
+
+.toggle-body {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.25s;
+
+    .toggle & {
+        max-height: initial;
+    }
+}

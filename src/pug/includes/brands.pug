@@ -1,0 +1,22 @@
+mixin brandsitem(src)
+	li.brands__item.swiper-slide
+		img(src="img/brands/"+src alt="" loading="lazy").brands__img
+
+section.brands
+	.container.brands__container
+		h2.section-header.section-header__brands Популярные бренды
+		.brands__slider
+			.brands__list.swiper.jsBrandsList
+				ul.brands__wrapper.swiper-wrapper
+					+brandsitem('01.png')
+					+brandsitem('02.png')
+					+brandsitem('03.png')
+					+brandsitem('04.png')
+					+brandsitem('05.png')
+					+brandsitem('06.png')
+					+brandsitem('07.png')
+					+brandsitem('08.png')
+					+brandsitem('09.png')
+					+brandsitem('10.png')
+			.brands__button-prev.swiper__prev
+			.brands__button-next.swiper__next

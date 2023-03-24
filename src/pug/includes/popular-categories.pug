@@ -1,0 +1,58 @@
+mixin popularCategoryItem(title)
+	li.popular-category__item
+		a(href="#").popular-category__link
+			span #{title}
+	
+
+section.popular-categories
+	.container.popular-categories__container
+		h2.section-header.section-header__popular-categories Популярные категории
+		.popular-categories__grid
+			.popular-categories__box.popular-category.popular-category__big
+				.popular-category__box
+					h3.popular-category__title Кондиционеры
+					ul.popular-category__block
+						+popularCategoryItem('Настенные сплит системы')
+						+popularCategoryItem('Напольные сплит системы')
+						+popularCategoryItem('Кассетные сплит системы')
+						+popularCategoryItem('Канальные сплит системы')
+					ul.popular-category__block
+						+popularCategoryItem('Колонные сплит системы')
+						+popularCategoryItem('Подпотолочные сплит системы')
+						+popularCategoryItem('Технологическое охлаждение')
+						+popularCategoryItem('Компрессорно-конденсаторные блоки')
+					ul.popular-category__block
+						+popularCategoryItem('Мульти сплит системы')
+						+popularCategoryItem('Мультизональные системы')
+						+popularCategoryItem('Мобильные кондиционеры')
+
+			.popular-categories__box.popular-category
+				.popular-category__box
+					h3.popular-category__title Очистители
+					ul.popular-category__block
+						+popularCategoryItem('Очистители воздуха')
+						+popularCategoryItem('Мойки воздуха')
+						+popularCategoryItem('Климатические комплексы')
+
+			.popular-categories__box.popular-category
+				.popular-category__box
+					h3.popular-category__title Осушители
+					ul.popular-category__block
+						+popularCategoryItem('Осушители бытовые')
+						+popularCategoryItem('Осушители для бассейнов')
+						+popularCategoryItem('Осушители промышленные')
+
+			.popular-categories__box.popular-category
+				.popular-category__box
+					h3.popular-category__title Увлажнители
+					ul.popular-category__block
+						+popularCategoryItem('Ультразвуковые увлажнители')
+						+popularCategoryItem('Изотермические увлажнители')
+						+popularCategoryItem('Адиабатические увлажнители')
+
+			.popular-categories__box.popular-category
+				.popular-category__box
+					h3.popular-category__title Вентиляционные установки
+					ul.popular-category__block
+						+popularCategoryItem('Настенного типа')
+						+popularCategoryItem('Канального типа')

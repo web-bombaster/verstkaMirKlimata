@@ -1,0 +1,71 @@
+//- (data-da="mobile-menu,4,768")
+
+mixin catalogMenuList()
+	ul.catalog-menu__list.jsToggleBody(data-da="mobile-menu__catalog,1,768")
+		block
+
+mixin catalogMenuItem(toggle)
+	if toggle == '0'
+		li.catalog-menu__item
+			block
+	if toggle == '1'
+		li.catalog-menu__item.toggle-menu.jsToggleSubMenuBtn
+			block
+
+mixin catalogMenulink(title, icon, toggle)
+	a(href="#").catalog-menu__link
+		svg.catalog-menu__icon
+			use(xlink:href='img/sprite.svg#'+icon)
+		span.catalog-menu__text #{title}
+		if toggle == '1'
+			svg.catalog-menu__toggle
+				use(xlink:href='img/sprite.svg#arrow')
+	block
+
+mixin catalogSubMenuList()
+	ul.catalog-menu__sub-menu.toggle-body.jsToggleBody
+		block
+
+mixin catalogMenuSubItem(title)
+	li.catalog-menu__sub-menu-item
+		a(href="#").catalog-menu__sub-menu-link #{title}
+
++catalogMenuList()
+	+catalogMenuItem('1')
+		+catalogMenulink('Кондиционеры', 'category-icion-01','1')
+			+catalogSubMenuList()
+				+catalogMenuSubItem('Настенные сплит-системы')
+				+catalogMenuSubItem('Напольные сплит-системы')
+				+catalogMenuSubItem('Кассетные сплит-системы')
+				+catalogMenuSubItem('Канальные сплит-системы')
+				+catalogMenuSubItem('Оконные кондиционеры')
+				+catalogMenuSubItem('Колонные сплит-системы')
+				+catalogMenuSubItem('Подпотолочные сплит-системы')
+				+catalogMenuSubItem('Технологическое охлаждение')
+				+catalogMenuSubItem('Компрессорно-конденсаторные блоки')
+				+catalogMenuSubItem('Мульти сплит-системы')
+				+catalogMenuSubItem('Мультизональные системы')
+				+catalogMenuSubItem('Мобильные кондиционеры')
+	+catalogMenuItem('1')
+		+catalogMenulink('Очистители', 'category-icion-02','1')
+			+catalogSubMenuList()
+				+catalogMenuSubItem('Очистители воздуха')
+				+catalogMenuSubItem('Мойки воздуха')
+				+catalogMenuSubItem('Климатические комплексы')
+	+catalogMenuItem('1')
+		+catalogMenulink('Осушители', 'category-icion-03','1')
+			+catalogSubMenuList()
+				+catalogMenuSubItem('Осушители бытовые')
+				+catalogMenuSubItem('Осушители для бассейнов')
+				+catalogMenuSubItem('Осушители промышленные')
+	+catalogMenuItem('1')
+		+catalogMenulink('Увлажнители', 'category-icion-04','1')
+			+catalogSubMenuList()
+				+catalogMenuSubItem('Ультразвуковые увлажнители')
+				+catalogMenuSubItem('Изотермические увлажнители')
+				+catalogMenuSubItem('Адиабатические увлажнители')
+	+catalogMenuItem('1')
+		+catalogMenulink('Вентиляционные установки', 'category-icion-05','1')
+			+catalogSubMenuList()
+				+catalogMenuSubItem('Вентиляционные установки настенного типа')
+				+catalogMenuSubItem('Вентиляционные установки канального типа')

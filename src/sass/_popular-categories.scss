@@ -1,0 +1,205 @@
+.popular-categories {
+	margin-bottom: var(--indentBlocks);
+}
+.popular-categories__container {
+}
+.section-header {
+}
+.section-header__popular-categories {
+}
+.popular-categories__grid {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 2fr 1.5fr 1.5fr;
+	grid-template-rows: 1fr 1fr;
+
+	@media screen and (max-width: $break_md) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto 1fr 1fr;
+	}
+
+	@media screen and (max-width: $break_sm) {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+}
+.popular-categories__box {
+}
+.popular-category {
+	position: relative;
+	padding: 4rem 3.6rem 5.8rem;
+	border-radius: var(--brs6);
+
+	background-repeat: no-repeat;
+
+	@media screen and (max-width: $break_sm) {
+		padding: 2rem 3rem 3rem 2rem;
+	}
+
+	@media screen and (max-width: $break_xs) {
+		padding: 2rem 3rem 9rem 2rem;
+	}
+
+	&:nth-child(1) {
+		background-color: var(--color-wizard-white);
+		background-image: url('../img/popular-categories/01.png');
+		background-size: 41%;
+		background-position: bottom right;
+
+		@media screen and (max-width: 1500px) {
+			background-size: 35%;
+		}
+
+		@media screen and (max-width: $break_xs) {
+			background-size: 30%;
+		}
+	}
+
+	&:nth-child(2) {
+		background-color: var(--color-drop-of-lemon);
+		background-image: url('../img/popular-categories/02.png');
+		background-size: 25%;
+		background-position: bottom 38% right 10%;
+
+		@media screen and (max-width: 1500px) {
+			background-size: 20%;
+			background-position: bottom 10% right 4%;
+		}
+
+		@media screen and (max-width: $break_sm) {
+			background-size: auto 80%;
+		}
+
+		@media screen and (max-width: $break_xs) {
+			background-size: 20%;
+			background-position: bottom -12% right 4%;
+		}
+	}
+
+	&:nth-child(3) {
+		background-color: var(--color-so-blue-berry);
+		background-image: url('../img/popular-categories/03.png');
+		background-size: 30%;
+		background-position: bottom 38% right 10%;
+
+		@media screen and (max-width: 1500px) {
+			background-size: 25%;
+			background-position: bottom 10% right;
+		}
+
+		@media screen and (max-width: $break_sm) {
+			background-size: auto 80%;
+		}
+
+		@media screen and (max-width: $break_xs) {
+			background-size: 20%;
+			background-position: bottom right;
+		}
+	}
+
+	&:nth-child(4) {
+		background-color: var(--color-so-blue-berry);
+		background-image: url('../img/popular-categories/04.png');
+		background-size: 33%;
+		background-position: bottom 38% right 5%;
+
+		@media screen and (max-width: 1500px) {
+			background-size: 25%;
+			background-position: bottom right;
+		}
+
+		@media screen and (max-width: $break_sm) {
+			background-size: auto 95%;
+		}
+
+		@media screen and (max-width: $break_xs) {
+			background-size: 20%;
+		}
+	}
+
+	&:nth-child(5) {
+		background-color: var(--color-wizard-white);
+		background-image: url('../img/popular-categories/05.png');
+		background-size: 75%;
+		background-position: bottom right;
+
+		@media screen and (max-width: 1500px) {
+			background-size: 60%;
+		}
+
+		@media screen and (max-width: $break_sm) {
+			background-size: auto 60%;
+		}
+
+		@media screen and (max-width: $break_xs) {
+			background-size: 60%;
+		}
+	}
+
+
+}
+.popular-category__big {
+	grid-column : span 1;
+	grid-row: span 2;
+
+	@media screen and (max-width: $break_md) {
+		grid-column : span 2;
+		grid-row: span 1;
+	}
+
+	@media screen and (max-width: $break_sm) {
+		grid-column : span 1;
+	}
+}
+.popular-category__box {
+
+}
+.popular-category__title {
+	margin-top: 0;
+	margin-bottom: 1.8rem;
+
+	font-size: 2.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.popular-category__block {
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
+.popular-category__item {
+	margin-bottom: 8px;
+}
+.popular-category__link {
+	font-size: 1.5rem;
+	transition: .25s;
+
+	&:hover {
+		// position: relative;
+		// transform: translateX(-8px);
+		padding-left: 8px;
+	}
+
+	// &:hover span {
+	// 	padding-right: 22px;
+	// }
+
+	span {
+		position: relative;
+		padding-right: 15px;
+
+		transition: .25s;
+
+		&::after {
+			position: absolute;
+			content: '';
+			right: 0;
+			bottom: 5px;
+			width: 5px;
+			height: 8px;
+
+			background-image: url('../img/icons/arrow.svg');
+			background-size: cover;
+		}
+	}
+}

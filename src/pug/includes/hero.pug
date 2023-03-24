@@ -1,0 +1,30 @@
+.hero
+	.container.hero__container
+		.hero__slider-box
+			.hero__slider.hero-slider.swiper.jsHeroSlider
+				.hero-slider__wrapper.swiper-wrapper
+					a(href="#").hero-slider__item.swiper-slide
+						img(src="../../img/hero-slider/01.jpg", alt="", loading="lazy").hero-slider__img
+					a(href="#").hero-slider__item.swiper-slide
+						img(src="../../img/hero-slider/02.jpg", alt="", loading="lazy").hero-slider__img
+				.hero-slider__next.swiper__next
+				.hero-slider__prev.swiper__prev
+		.hero__promo.hero-promo
+			h2.hero-promo__title
+				svg.icon
+					use(xlink:href='img/sprite.svg#fire')
+				|Лучшее предложение
+
+			+productItem(
+				'Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z',
+				'00.jpg',
+				'16 400 ₽',
+				'',
+				'',
+				'1',
+				'1',
+				'0',
+				'0',
+				'0',
+				'1',
+			)

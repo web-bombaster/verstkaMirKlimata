@@ -1,0 +1,58 @@
+.header
+	.header__top.header-top
+
+		.container.header-top__container
+			span.header-top__location Ростовская область, Аксай
+
+			ul.header-top__menu.top-menu(data-da="mobile-menu__menu,1,992")
+				li.top-menu__item
+					a(href="#").top-menu__link Доставка
+				li.top-menu__item
+					a(href="#").top-menu__link Оплата
+				li.top-menu__item
+					a(href="#").top-menu__link Монтаж
+				li.top-menu__item
+					a(href="#").top-menu__link Бренды
+				li.top-menu__item
+					a(href="#").top-menu__link Контакты
+
+			.header-top__contacts.top-contacts
+				a(href="tel:+78633008300").top-contacts__phone +7 (863) 300-8-300
+				a(href="tel:+79613300030").top-contacts__phone +7 (961) 330-00-30
+
+	.header__box.header-box
+		.container.header-box__container
+			a(href="/").header-box__logo
+				img(src="img/logo-header.png", alt="")
+
+			.header-box__catalog-menu
+				button.catalog-menu__btn.burger__menu-btn.js-burger.js-catalog-open-btn
+					span
+					| Каталог
+				include catalog-menu
+
+			include ../includes/search-panel
+
+			.header-box__shop-icons.shop-icons(data-da="mobile-menu__btns,1,600")
+				a(href="#" title="Вход").shop-icons__link
+					svg.icon
+						use(xlink:href='img/sprite.svg#shop-login')
+				a(href="#" title="Просмотрено").shop-icons__link.disable
+					svg.icon
+						use(xlink:href='img/sprite.svg#shop-view')
+					span.shop-icons__label 0
+				a(href="#" title="Сравнение").shop-icons__link.disable
+					svg.icon
+						use(xlink:href='img/sprite.svg#shop-compare')
+					span.shop-icons__label 0
+				a(href="#" title="Избранное").shop-icons__link.disable
+					svg.icon
+						use(xlink:href='img/sprite.svg#shop-favourites')
+					span.shop-icons__label 0
+				a(href="#" title="Корзина").shop-icons__link
+					svg.icon
+						use(xlink:href='img/sprite.svg#shop-cart')
+					span.shop-icons__label 27
+
+			button.mobile-menu-btn.burger__menu-btn.js-burger.jsMobileMenuBtnToggle
+				span
