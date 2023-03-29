@@ -1,0 +1,86 @@
+.shop-icons {
+	// position: absolute;
+	// bottom: 0;
+	// left: 30px;
+	// right: 30px;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	// width: 100%;
+
+	margin-left: auto;
+	display: inline-flex;
+	align-items: center;
+	gap: 48px;
+
+	@media (max-width: 1500px) {
+		gap: 25px;
+	}
+
+	@media (max-width: 600px) {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.shop-icons__link {
+	position: relative;
+	font-size: 0;
+	z-index: 2;
+
+	.icon {
+		height: 25px;
+		width: 25px;
+		// width: auto;
+		display: inline-flex;
+	}
+
+	&.disable {
+		.shop-icons__label {
+			color: #8D8D8D;
+			background-color: var(--color-bg-page);
+		}
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		height: 44px;
+		width: 44px;
+		border: 1px solid #fff;
+		border-radius: var(--brs6);
+
+		// z-index: -1;
+
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.shop-icons__label {
+	position: absolute;
+	top: -10px;
+	right: -8px;
+	z-index: 3;
+
+	padding-left: 2px;
+	padding-right: 2px;
+
+	height: 17px;
+	min-width: 17px;
+
+	border-radius: 17px;
+
+	font-size: 11px;
+	line-height: 17px;
+	text-align: center;
+
+	color: var(--color-white);
+	background-color: var(--color-main);
+
+	@media (max-width: 600px) {
+		background-color: var(--color-accent);
+	}
+}

@@ -11,12 +11,578 @@
     <script src="js/scripts.min.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Верстка сайта «Мир климата»:</h1>
-      <div class="index">
-        <p class="info">Если страничка отображается криво, обновляем ее через CTRL + F5!</p>
-        <p><a href="home.html" target="_blank">home - Главная</a></p>
+    <div class="visible" id="preloader"></div>
+    <div class="header">
+      <div class="header__top header-top">
+        <div class="container header-top__container"><span class="header-top__location">Ростовская область, Аксай</span>
+          <ul class="header-top__menu top-menu" data-da="mobile-menu__menu,1,992">
+            <li class="top-menu__item"><a class="top-menu__link" href="#">Доставка</a></li>
+            <li class="top-menu__item"><a class="top-menu__link" href="#">Оплата</a></li>
+            <li class="top-menu__item"><a class="top-menu__link" href="#">Монтаж</a></li>
+            <li class="top-menu__item"><a class="top-menu__link" href="#">Бренды</a></li>
+            <li class="top-menu__item"><a class="top-menu__link" href="#">Контакты</a></li>
+          </ul>
+          <div class="header-top__contacts top-contacts"><a class="top-contacts__phone" href="tel:+78633008300">+7 (863) 300-8-300</a><a class="top-contacts__phone" href="tel:+79613300030">+7 (961) 330-00-30</a></div>
+        </div>
       </div>
+      <div class="header__box header-box">
+        <div class="container header-box__container"><a class="header-box__logo" href="/"><img src="img/logo-header.png" alt=""></a>
+          <div class="header-box__catalog-menu">
+            <button class="catalog-menu__btn burger__menu-btn js-burger js-catalog-open-btn"><span></span>Каталог</button>
+                        <ul class="catalog-menu__list jsToggleBody" data-da="mobile-menu__catalog,1,768">
+                                      <li class="catalog-menu__item toggle-menu jsToggleSubMenuBtn"><a class="catalog-menu__link" href="#">
+                                                      <svg class="catalog-menu__icon">
+                                                        <use xlink:href="img/sprite.svg#category-icion-01"></use>
+                                                      </svg><span class="catalog-menu__text">Кондиционеры</span>
+                                                      <svg class="catalog-menu__toggle">
+                                                        <use xlink:href="img/sprite.svg#arrow"></use>
+                                                      </svg></a>
+                                                                <ul class="catalog-menu__sub-menu toggle-body jsToggleBody">
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Настенные сплит-системы</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Напольные сплит-системы</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Кассетные сплит-системы</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Канальные сплит-системы</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Оконные кондиционеры</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Колонные сплит-системы</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Подпотолочные сплит-системы</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Технологическое охлаждение</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Компрессорно-конденсаторные блоки</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Мульти сплит-системы</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Мультизональные системы</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Мобильные кондиционеры</a></li>
+                                                                </ul>
+                                      </li>
+                                      <li class="catalog-menu__item toggle-menu jsToggleSubMenuBtn"><a class="catalog-menu__link" href="#">
+                                                      <svg class="catalog-menu__icon">
+                                                        <use xlink:href="img/sprite.svg#category-icion-02"></use>
+                                                      </svg><span class="catalog-menu__text">Очистители</span>
+                                                      <svg class="catalog-menu__toggle">
+                                                        <use xlink:href="img/sprite.svg#arrow"></use>
+                                                      </svg></a>
+                                                                <ul class="catalog-menu__sub-menu toggle-body jsToggleBody">
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Очистители воздуха</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Мойки воздуха</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Климатические комплексы</a></li>
+                                                                </ul>
+                                      </li>
+                                      <li class="catalog-menu__item toggle-menu jsToggleSubMenuBtn"><a class="catalog-menu__link" href="#">
+                                                      <svg class="catalog-menu__icon">
+                                                        <use xlink:href="img/sprite.svg#category-icion-03"></use>
+                                                      </svg><span class="catalog-menu__text">Осушители</span>
+                                                      <svg class="catalog-menu__toggle">
+                                                        <use xlink:href="img/sprite.svg#arrow"></use>
+                                                      </svg></a>
+                                                                <ul class="catalog-menu__sub-menu toggle-body jsToggleBody">
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Осушители бытовые</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Осушители для бассейнов</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Осушители промышленные</a></li>
+                                                                </ul>
+                                      </li>
+                                      <li class="catalog-menu__item toggle-menu jsToggleSubMenuBtn"><a class="catalog-menu__link" href="#">
+                                                      <svg class="catalog-menu__icon">
+                                                        <use xlink:href="img/sprite.svg#category-icion-04"></use>
+                                                      </svg><span class="catalog-menu__text">Увлажнители</span>
+                                                      <svg class="catalog-menu__toggle">
+                                                        <use xlink:href="img/sprite.svg#arrow"></use>
+                                                      </svg></a>
+                                                                <ul class="catalog-menu__sub-menu toggle-body jsToggleBody">
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Ультразвуковые увлажнители</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Изотермические увлажнители</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Адиабатические увлажнители</a></li>
+                                                                </ul>
+                                      </li>
+                                      <li class="catalog-menu__item toggle-menu jsToggleSubMenuBtn"><a class="catalog-menu__link" href="#">
+                                                      <svg class="catalog-menu__icon">
+                                                        <use xlink:href="img/sprite.svg#category-icion-05"></use>
+                                                      </svg><span class="catalog-menu__text">Вентиляционные установки</span>
+                                                      <svg class="catalog-menu__toggle">
+                                                        <use xlink:href="img/sprite.svg#arrow"></use>
+                                                      </svg></a>
+                                                                <ul class="catalog-menu__sub-menu toggle-body jsToggleBody">
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Вентиляционные установки настенного типа</a></li>
+                                                                              <li class="catalog-menu__sub-menu-item"><a class="catalog-menu__sub-menu-link" href="#">Вентиляционные установки канального типа</a></li>
+                                                                </ul>
+                                      </li>
+                        </ul>
+          </div>
+          <div class="header-box__search search" data-da="mobile-menu__search,1,992">
+            <form class="search-form" action="/search" method="GET">
+              <input class="search-field" type="search" name="search" placeholder="Кондиционер">
+              <button class="btn-search" type="submit" aria-label="Найти"></button>
+            </form>
+          </div>
+          <div class="header-box__shop-icons shop-icons" data-da="mobile-menu__btns,1,600"><a class="shop-icons__link" href="#" title="Вход">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#shop-login"></use>
+              </svg></a><a class="shop-icons__link disable" href="#" title="Просмотрено">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#shop-view"></use>
+              </svg><span class="shop-icons__label">0</span></a><a class="shop-icons__link disable" href="#" title="Сравнение">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#shop-compare"></use>
+              </svg><span class="shop-icons__label">0</span></a><a class="shop-icons__link disable" href="#" title="Избранное">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#shop-favourites"></use>
+              </svg><span class="shop-icons__label">0</span></a><a class="shop-icons__link" href="#" title="Корзина">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#shop-cart"></use>
+              </svg><span class="shop-icons__label">27</span></a></div>
+          <button class="mobile-menu-btn burger__menu-btn js-burger jsMobileMenuBtnToggle"><span></span></button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="hero">
+        <div class="container hero__container">
+          <div class="hero__slider-box">
+            <div class="hero__slider hero-slider swiper jsHeroSlider">
+              <div class="hero-slider__wrapper swiper-wrapper"><a class="hero-slider__item swiper-slide" href="#"><img class="hero-slider__img" src="img/hero-slider/01.jpg" alt="" loading="lazy"></a><a class="hero-slider__item swiper-slide" href="#"><img class="hero-slider__img" src="img/hero-slider/02.jpg" alt="" loading="lazy"></a></div>
+              <div class="hero-slider__next swiper__next"></div>
+              <div class="hero-slider__prev swiper__prev"></div>
+            </div>
+          </div>
+          <div class="hero__promo hero-promo">
+            <h2 class="hero-promo__title">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#fire"></use>
+              </svg>Лучшее предложение
+            </h2><a class="products-list__item product-item swiper-slide" href="#">
+              <div class="product-item__labels labels">
+                <div class="labels__item labels__popular">Популярно</div>
+              </div>
+              <div class="product-item__bookmark bookmark">
+                <div class="component-catalog-actions-bookmark" title="Добавить в избранное">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#shop-favourites"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="product-item__img"><img src="img/products/00.jpg" alt="" loading="lazy"/></div>
+              <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+              <div class="product-item__info">
+                <div class="product-item__availability product-item__availability--true">В наличии
+                  <svg>
+                    <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                  </svg>
+                </div>
+                <div class="product-item__params params"><span class="params__name">Площадь:</span><span class="params__value">20 м²</span></div>
+                <div class="product-item__params params"><span class="params__name">Инвертор:</span><span class="params__value">Да</span></div>
+              </div>
+              <div class="product-item__footer">
+                <div class="product-item__price">16 400 ₽
+                </div>
+                <div class="product-item__actions">
+                  <div class="product-item__buy buy">
+                    <div class="product-item__btn component-catalog-actions-buy" title="Добавить в корзину">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#shop-cart"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="product-item__compare compare" title="Добавлено в сравнение">
+                    <div class="product-item__btn component-catalog-actions-compare isSent">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#shop-compare"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+        </div>
+      </div>
+      <section class="main-columns main__home">
+        <div class="container main-columns__container">
+          <aside class="main-columns__aside">
+            <div class="catalog-menu">
+              <button class="catalog-menu__btn burger__menu-btn">Каталог товаров<span></span></button>
+            </div>
+            <div class="selection-help">
+              <div class="selection-help__title">Поможем в подборе климатического оборудования</div>
+              <p class="selection-help__descr">Наши специалисты на связи и проконсультируют вас по всем вопросам</p><a class="selection-help__phone" href="tel:+79613300030">+7 (961) 330-00-30</a><a class="selection-help__phone" href="tel:+78633008300">+7 (863) 300-8-300</a>
+            </div>
+          </aside>
+          <div class="main-columns__content">
+            <div class="advantages">
+              <ul class="advantages__list">
+                <li class="advantages__item"><img class="advantages__icon" src="img/advantages/01.svg" alt="">
+                  <div class="advantages__title">Персональные скидки</div>
+                </li>
+                <li class="advantages__item"><img class="advantages__icon" src="img/advantages/02.svg" alt="">
+                  <div class="advantages__title">Доставка по всей России</div>
+                </li>
+                <li class="advantages__item"><img class="advantages__icon" src="img/advantages/03.svg" alt="">
+                  <div class="advantages__title">Официальная гарантия</div>
+                </li>
+              </ul>
+            </div>
+            <div class="products">
+              <h2 class="section-header section-header__products">Хиты продаж</h2>
+              <div class="products-slider">
+                <div class="products-slider__box jsProductsListSlider swiper">
+                  <div class="products__list products-list swiper-wrapper"><a class="products-list__item product-item swiper-slide" href="#">
+                      <div class="product-item__labels labels">
+                        <div class="labels__item labels__popular">Популярно</div>
+                        <div class="labels__item labels__installment">Рассрочка</div>
+                      </div>
+                      <div class="product-item__bookmark bookmark">
+                        <div class="component-catalog-actions-bookmark" title="Добавить в избранное">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#shop-favourites"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-item__img"><img src="img/products/01.jpg" alt="" loading="lazy"/></div>
+                      <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                      <div class="product-item__info">
+                        <div class="product-item__availability product-item__availability--true">В наличии
+                          <svg>
+                            <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                          </svg>
+                        </div>
+                        <div class="product-item__params params"><span class="params__name">Площадь:</span><span class="params__value">20 м²</span></div>
+                        <div class="product-item__params params"><span class="params__name">Инвертор:</span><span class="params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__footer">
+                        <div class="product-item__price">16 400 ₽
+                        </div>
+                        <div class="product-item__actions">
+                          <div class="product-item__buy buy">
+                            <div class="product-item__btn component-catalog-actions-buy isSent" title="Добавлено в корзину">
+                              <svg>
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="product-item__compare compare" title="Добавлено в сравнение">
+                            <div class="product-item__btn component-catalog-actions-compare isSent">
+                              <svg>
+                                <use xlink:href="img/sprite.svg#shop-compare"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div></a><a class="products-list__item product-item swiper-slide" href="#">
+                      <div class="product-item__labels labels">
+                      </div>
+                      <div class="product-item__bookmark bookmark">
+                        <div class="component-catalog-actions-bookmark isSent" title="Удалить из избранного">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#shop-favourites-fill"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"/></div>
+                      <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                      <div class="product-item__info">
+                        <div class="product-item__availability">Под заказ</div>
+                        <div class="product-item__params params"><span class="params__name">Площадь:</span><span class="params__value">20 м²</span></div>
+                        <div class="product-item__params params"><span class="params__name">Инвертор:</span><span class="params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__footer">
+                        <div class="product-item__price">757 500 ₽<span class="old-price">859 500 ₽</span><span class="discount">-24%</span>
+                        </div>
+                        <div class="product-item__actions">
+                          <div class="product-item__buy buy">
+                            <div class="product-item__btn component-catalog-actions-buy" title="Добавить в корзину">
+                              <svg>
+                                <use xlink:href="img/sprite.svg#shop-cart"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="product-item__compare compare" title="Добавить в сравнение">
+                            <div class="product-item__btn component-catalog-actions-compare">
+                              <svg>
+                                <use xlink:href="img/sprite.svg#shop-compare"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div></a><a class="products-list__item product-item swiper-slide" href="#">
+                      <div class="product-item__labels labels">
+                        <div class="labels__item labels__popular">Популярно</div>
+                      </div>
+                      <div class="product-item__bookmark bookmark">
+                        <div class="component-catalog-actions-bookmark" title="Добавить в избранное">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#shop-favourites"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-item__img"><img src="img/products/03.jpg" alt="" loading="lazy"/></div>
+                      <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                      <div class="product-item__info">
+                        <div class="product-item__availability product-item__availability--true">В наличии
+                          <svg>
+                            <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                          </svg>
+                        </div>
+                        <div class="product-item__params params"><span class="params__name">Площадь:</span><span class="params__value">20 м²</span></div>
+                        <div class="product-item__params params"><span class="params__name">Инвертор:</span><span class="params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__footer">
+                        <div class="product-item__price">57 500 ₽
+                        </div>
+                        <div class="product-item__actions">
+                          <div class="product-item__buy buy">
+                            <div class="product-item__btn component-catalog-actions-buy" title="Добавить в корзину">
+                              <svg>
+                                <use xlink:href="img/sprite.svg#shop-cart"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="product-item__compare compare" title="Добавить в сравнение">
+                            <div class="product-item__btn component-catalog-actions-compare">
+                              <svg>
+                                <use xlink:href="img/sprite.svg#shop-compare"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div></a><a class="products-list__item product-item swiper-slide" href="#">
+                      <div class="product-item__labels labels">
+                        <div class="labels__item labels__installment">Рассрочка</div>
+                      </div>
+                      <div class="product-item__bookmark bookmark">
+                        <div class="component-catalog-actions-bookmark" title="Добавить в избранное">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#shop-favourites"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-item__img"><img src="img/products/04.jpg" alt="" loading="lazy"/></div>
+                      <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                      <div class="product-item__info">
+                        <div class="product-item__availability product-item__availability--true">В наличии
+                          <svg>
+                            <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                          </svg>
+                        </div>
+                        <div class="product-item__params params"><span class="params__name">Площадь:</span><span class="params__value">20 м²</span></div>
+                        <div class="product-item__params params"><span class="params__name">Инвертор:</span><span class="params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__footer">
+                        <div class="product-item__price">67 900 ₽
+                        </div>
+                        <div class="product-item__actions">
+                          <div class="product-item__buy buy">
+                            <div class="product-item__btn component-catalog-actions-buy" title="Добавить в корзину">
+                              <svg>
+                                <use xlink:href="img/sprite.svg#shop-cart"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="product-item__compare compare" title="Добавить в сравнение">
+                            <div class="product-item__btn component-catalog-actions-compare">
+                              <svg>
+                                <use xlink:href="img/sprite.svg#shop-compare"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div></a><a class="products-list__item product-item swiper-slide" href="#">
+                      <div class="product-item__labels labels">
+                      </div>
+                      <div class="product-item__bookmark bookmark">
+                        <div class="component-catalog-actions-bookmark" title="Добавить в избранное">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#shop-favourites"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"/></div>
+                      <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                      <div class="product-item__info">
+                        <div class="product-item__availability product-item__availability--true">В наличии
+                          <svg>
+                            <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                          </svg>
+                        </div>
+                        <div class="product-item__params params"><span class="params__name">Площадь:</span><span class="params__value">20 м²</span></div>
+                        <div class="product-item__params params"><span class="params__name">Инвертор:</span><span class="params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__footer">
+                        <div class="product-item__price">22 400 ₽
+                        </div>
+                        <div class="product-item__actions">
+                          <div class="product-item__buy buy">
+                            <div class="product-item__btn component-catalog-actions-buy isSent" title="Добавлено в корзину">
+                              <svg>
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="product-item__compare compare" title="Добавить в сравнение">
+                            <div class="product-item__btn component-catalog-actions-compare">
+                              <svg>
+                                <use xlink:href="img/sprite.svg#shop-compare"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                </div>
+                <div class="products-list__next swiper__next"></div>
+                <div class="products-list__prev swiper__prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular-categories">
+        <div class="container popular-categories__container">
+          <h2 class="section-header section-header__popular-categories">Популярные категории</h2>
+          <div class="popular-categories__grid">
+            <div class="popular-categories__box popular-category popular-category__big">
+              <div class="popular-category__box">
+                <h3 class="popular-category__title">Кондиционеры</h3>
+                <ul class="popular-category__block">
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Настенные сплит системы</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Напольные сплит системы</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Кассетные сплит системы</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Канальные сплит системы</span></a></li>
+                </ul>
+                <ul class="popular-category__block">
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Колонные сплит системы</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Подпотолочные сплит системы</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Технологическое охлаждение</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Компрессорно-конденсаторные блоки</span></a></li>
+                </ul>
+                <ul class="popular-category__block">
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Мульти сплит системы</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Мультизональные системы</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Мобильные кондиционеры</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="popular-categories__box popular-category">
+              <div class="popular-category__box">
+                <h3 class="popular-category__title">Очистители</h3>
+                <ul class="popular-category__block">
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Очистители воздуха</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Мойки воздуха</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Климатические комплексы</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="popular-categories__box popular-category">
+              <div class="popular-category__box">
+                <h3 class="popular-category__title">Осушители</h3>
+                <ul class="popular-category__block">
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Осушители бытовые</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Осушители для бассейнов</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Осушители промышленные</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="popular-categories__box popular-category">
+              <div class="popular-category__box">
+                <h3 class="popular-category__title">Увлажнители</h3>
+                <ul class="popular-category__block">
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Ультразвуковые увлажнители</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Изотермические увлажнители</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Адиабатические увлажнители</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="popular-categories__box popular-category">
+              <div class="popular-category__box">
+                <h3 class="popular-category__title">Вентиляционные установки</h3>
+                <ul class="popular-category__block">
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Настенного типа</span></a></li>
+                        <li class="popular-category__item"><a class="popular-category__link" href="#"><span>Канального типа</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="container banner__container">
+          <div class="banner__inner">
+            <div class="banner__box">
+              <h2 class="banner__header">Бесплатная доставка по&nbsp;Ростову-на-дону</h2>
+              <p class="banner__descr">При заказе от 10 000 руб. Доставка по&nbsp;Ростовской области - 25 руб/км</p>
+            </div><img class="banner__img" src="img/banners/bg-banner-01.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="brands">
+        <div class="container brands__container">
+          <h2 class="section-header section-header__brands">Популярные бренды</h2>
+          <div class="brands__slider">
+            <div class="brands__list swiper jsBrandsList">
+              <ul class="brands__wrapper swiper-wrapper">
+                      <li class="brands__item swiper-slide"><img class="brands__img" src="img/brands/01.png" alt="" loading="lazy"></li>
+                      <li class="brands__item swiper-slide"><img class="brands__img" src="img/brands/02.png" alt="" loading="lazy"></li>
+                      <li class="brands__item swiper-slide"><img class="brands__img" src="img/brands/03.png" alt="" loading="lazy"></li>
+                      <li class="brands__item swiper-slide"><img class="brands__img" src="img/brands/04.png" alt="" loading="lazy"></li>
+                      <li class="brands__item swiper-slide"><img class="brands__img" src="img/brands/05.png" alt="" loading="lazy"></li>
+                      <li class="brands__item swiper-slide"><img class="brands__img" src="img/brands/06.png" alt="" loading="lazy"></li>
+                      <li class="brands__item swiper-slide"><img class="brands__img" src="img/brands/07.png" alt="" loading="lazy"></li>
+                      <li class="brands__item swiper-slide"><img class="brands__img" src="img/brands/08.png" alt="" loading="lazy"></li>
+                      <li class="brands__item swiper-slide"><img class="brands__img" src="img/brands/09.png" alt="" loading="lazy"></li>
+                      <li class="brands__item swiper-slide"><img class="brands__img" src="img/brands/10.png" alt="" loading="lazy"></li>
+              </ul>
+            </div>
+            <div class="brands__button-prev swiper__prev"></div>
+            <div class="brands__button-next swiper__next"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__row">
+          <div class="footer__col footer__col--logo"><a class="footer__logo" href="/"><img src="img/logo-footer.png" alt=""></a>
+            <div class="footer__copy">Мир Климата © 2021. Все права защищены</div>
+          </div>
+          <div class="footer__col footer__col--menu">
+            <div class="footer__title">Интернет-магазин</div>
+            <ul class="footer__menu">
+              <li class="footer__item"><a class="footer__link" href="#">Каталог</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Оплата</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Доставка</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Гарантия</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Кредит и рассрочка</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Бренды</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--menu">
+            <div class="footer__title">помощь покупателю</div>
+            <ul class="footer__menu">
+              <li class="footer__item"><a class="footer__link" href="#">Монтаж</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Реквизиты</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Оферта</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Конфиденциальность</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Обмен и возврат</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Действия при поломке</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">О компании</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--contacts">
+            <div class="footer__contacts">
+              <div class="footer__phone"><a href="tel:+79613300030">+7 (961) 330-00-30</a><a href="tel:+78633008300">+7 (863) 300-8-300</a></div>
+              <div class="footer__mail"><a href="mailto:sale@mirklimata-rostov.ru">sale@mirklimata-rostov.ru</a></div>
+              <div class="footer__info">
+                <p>c 9:00 до 21:00 МСК, ежедневно</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="mobile-menu">
+      <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__search"></div>
+        <div class="mobile-menu__title catalog">Каталог</div>
+        <div class="mobile-menu__catalog"></div>
+        <div class="mobile-menu__title menu">Меню</div>
+        <div class="mobile-menu__menu"></div>
+      </div>
+      <div class="mobile-menu__btns"></div>
     </div>
   </body>
 </html>
