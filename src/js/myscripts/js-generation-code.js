@@ -1,4 +1,4 @@
-if (document.querySelector('.catalog-menu__list')) {
+if (document.querySelector('.catalog-menu')) {
     const catalogMenuList = document.querySelector('.catalog-menu__list'); // что клонируем
     const catalogMmenu = document.querySelector('.catalog-menu'); // куда клонируем
 

@@ -4,14 +4,23 @@
 include ../includes/mixins
 
 //- Для pageType указать тип страницы
-- var pageType = 'home';
+- var pageType = 'catalog';
 
 
 //- home - главная страница
 if pageType === 'home'
 	include home
 
+//- catalog - Каталог товаров
+if pageType === 'catalog'
+	include catalog
+
+//- catalog
+
+
 //- index - для показа верстки
 if pageType === 'index'
 	include verstka
+
+
 

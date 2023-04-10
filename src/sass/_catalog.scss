@@ -1,0 +1,14 @@
+.catalog {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.catalog__filter {
+    max-width: 274px;
+    width: 100%;
+}
+
+.catalog__content {
+    flex-grow: 1;
+}

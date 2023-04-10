@@ -326,3 +326,9 @@
         border: 1px solid var(--color-main);
     }
 }
+
+.products-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: var(--mainGap);
+}
