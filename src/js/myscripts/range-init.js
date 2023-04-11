@@ -1,18 +1,3 @@
-// для всех слайдеров цен запускаем функцию инициализации
-function rangeSlidersSearch() {
-    if (document.querySelector('.range__slider')) {
-        const ranges = document.querySelectorAll('.range__slider');
-
-        ranges.forEach(function(element) {
-            rangeSliderInit(element);
-        });
-    };
-};
-
-rangeSlidersSearch();
-
-
-
 function rangeSliderInit(element) { // создаем функцию инициализации слайдера
     const range = element; // Ищем слайдер
     const inputMin = element.parentNode.previousElementSibling.querySelector('.range__input--min'); // Ищем input с меньшим значнием
@@ -47,6 +32,15 @@ function rangeSliderInit(element) { // создаем функцию иници�
     });
 };
 
-// rangeSliderInit();
+// для всех слайдеров цен запускаем функцию инициализации
+function rangeSlidersSearch() {
+    if (document.querySelector('.range__slider')) {
+        const ranges = document.querySelectorAll('.range__slider');
 
-// window.addEventListener('DOMContentLoaded', rangeSliderInit) // запускаем функцию init, когда документ будет загружен и готов к взаимодействию
+        ranges.forEach(function(element) {
+            rangeSliderInit(element);
+        });
+    };
+};
+
+rangeSlidersSearch();

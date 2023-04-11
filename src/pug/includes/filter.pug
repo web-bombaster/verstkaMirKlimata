@@ -20,62 +20,70 @@ mixin checkbox(title, count)
 
 		fieldset.filter__fieldset
 			legend.filter__legend Мощность
-			+checkbox('15 м² - 1,5 кВТ', '1174')
-			+checkbox('20 м² - 2 кВТ', '254')
-			+checkbox('25 м² - 2,5 кВТ', '3')
-			+checkbox('30 м² - 3,0 кВТ', '11')
-			+checkbox('45 м² - 4,5 кВт', '226')
-			+checkbox('50 м² - 5,0 кВт', '25')
-			+checkbox('60 м² - 6,0 кВт', '176')
-			+checkbox('70 м² - 7,0 кВт', '20')
-			+checkbox('80 м² - 8,0 кВт', '18')
-			+checkbox('90 м² - 9,0 кВт', '20')
-			+checkbox('100 м² - 10,0 кВт', '2')
-			+checkbox('110 м² - 11,0 кВт', '1')
-			+checkbox('до 10,0 кВт', '15')
+			.filter__box-checkbox
+				+checkbox('15 м² - 1,5 кВТ', '1174')
+				+checkbox('20 м² - 2 кВТ', '254')
+				+checkbox('25 м² - 2,5 кВТ', '3')
+				+checkbox('30 м² - 3,0 кВТ', '11')
+				+checkbox('45 м² - 4,5 кВт', '226')
+				+checkbox('50 м² - 5,0 кВт', '25')
+				+checkbox('60 м² - 6,0 кВт', '176')
+				+checkbox('70 м² - 7,0 кВт', '20')
+				+checkbox('80 м² - 8,0 кВт', '18')
+				+checkbox('90 м² - 9,0 кВт', '20')
+				+checkbox('100 м² - 10,0 кВт', '2')
+				+checkbox('110 м² - 11,0 кВт', '1')
+				+checkbox('до 10,0 кВт', '15')
 
 		fieldset.filter__fieldset
 			legend.filter__legend Бренд
-			+checkbox('Ballu', '1')
-			+checkbox('Mitsubishi', '174')
-			+checkbox('Haier', '254')
-			+checkbox('Electrolux', '23')
-			+checkbox('Subtropic', '143')
-			+checkbox('Aero', '22')
+			.filter__box-checkbox
+				+checkbox('Ballu', '1')
+				+checkbox('Mitsubishi', '174')
+				+checkbox('Haier', '254')
+				+checkbox('Electrolux', '23')
+				+checkbox('Subtropic', '143')
+				+checkbox('Aero', '22')
 
 		fieldset.filter__fieldset
 			legend.filter__legend Компрессор
-			+checkbox('Инвертор', '1')
-			+checkbox('Не инвертор', '0')
+			.filter__box-checkbox
+				+checkbox('Инвертор', '1')
+				+checkbox('Не инвертор', '0')
 
 		fieldset.filter__fieldset
 			legend.filter__legend Wi-Fi управление
-			+checkbox('В комплекте', '1')
-			+checkbox('Опционально', '1')
+			.filter__box-checkbox
+				+checkbox('В комплекте', '1')
+				+checkbox('Опционально', '1')
 
 		fieldset.filter__fieldset
 			legend.filter__legend Режим работы
-			+checkbox('Охлаждение / Обогрев', '1')
-			+checkbox('Только охлаждение', '1')
+			.filter__box-checkbox
+				+checkbox('Охлаждение / Обогрев', '1')
+				+checkbox('Только охлаждение', '1')
 
 		fieldset.filter__fieldset
 			legend.filter__legend Класс энергоэффективности
-			+checkbox('А', '1')
-			+checkbox('А+', '1')
-			+checkbox('А++', '1')
-			+checkbox('А+++', '1')
+			.filter__box-checkbox
+				+checkbox('А', '1')
+				+checkbox('А+', '1')
+				+checkbox('А++', '1')
+				+checkbox('А+++', '1')
 
 		fieldset.filter__fieldset
 			legend.filter__legend Цвет
-			+checkbox('Белый', '1')
-			+checkbox('Серый', '1')
-			+checkbox('Черный', '1')
+			.filter__box-checkbox
+				+checkbox('Белый', '1')
+				+checkbox('Серый', '1')
+				+checkbox('Черный', '1')
 
 		fieldset.filter__fieldset
 			legend.filter__legend Страна сборки
-			+checkbox('Китай', '1')
-			+checkbox('Таиланд', '1')
-			+checkbox('Малайзия', '1')
-			+checkbox('Турция', '1')
-			+checkbox('Чехия', '1')
-			+checkbox('Япония', '1')
+			.filter__box-checkbox
+				+checkbox('Китай', '1')
+				+checkbox('Таиланд', '1')
+				+checkbox('Малайзия', '1')
+				+checkbox('Турция', '1')
+				+checkbox('Чехия', '1')
+				+checkbox('Япония', '1')

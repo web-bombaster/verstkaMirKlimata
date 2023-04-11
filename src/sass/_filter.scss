@@ -21,6 +21,18 @@
     font-size: 16px;
     font-weight: 600;
 }
+
+.filter__box-checkbox .show-all {
+    font-size: 16px;
+    color: var(--color-main);
+
+    cursor: pointer;
+
+    &.toggle {
+        
+    }
+}
+
 .filter__label {
     display: block;
 
@@ -30,6 +42,10 @@
 
     &:not(:last-child) {
         margin-bottom: 18px;
+    }
+
+    &.toggle {
+        display: none;
     }
 }
 
