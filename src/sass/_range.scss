@@ -1,9 +1,10 @@
 @use "sass:math";
 
 .range {
+    margin-bottom: 15px;
 }
 .range__values {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 
     display: flex;
     justify-content: space-between;

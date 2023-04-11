@@ -1,0 +1,154 @@
+.page-settings {
+    margin-bottom: 22px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+}
+
+.page-settings__sort {
+}
+
+.page-sort {
+}
+
+.page-sort__current {
+    display: inline-flex;
+    align-items: center;
+
+    height: 36px;
+
+    border-radius: 7px;
+    border: 1px solid var(--color-border-input);
+
+    cursor: pointer;
+    transition: .25s;
+
+    overflow: hidden;
+
+    &.toggle {
+        .icon {
+            transform: rotate(270deg);
+        }
+    }
+
+    .title {
+        padding: 10px;
+        border-right: 1px solid var(--color-border-input);
+
+        font-size: 13px;
+    }
+    .icon {
+        // margin-right: 22px;
+        padding: 5px 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transform: rotate(90deg);
+        transition: transform .25s;
+
+        svg {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}
+
+.page-sort__variants {
+    position: relative;
+    display: none;
+
+    top: 4px;
+    z-index: 10;
+
+    padding: 14px;
+    width: 174px;
+
+    font-size: 14px;
+
+    border: 1px solid var(--color-border-input);
+    border-radius: var(--brs6);
+
+    &.toggle {
+        display: block;
+    }
+}
+.variants-item {
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    &.toggle {
+        color: var(--color-main);
+    }
+}
+.page-settings__count {
+}
+.page-count {
+    display: flex;
+    gap: 16px;
+}
+.page-count__item {
+    padding: 5px;
+    position: relative;
+
+    color: var(--more-than-a-week);
+
+    cursor: pointer;
+
+    &.toggle {
+        color: var(--color-text);
+    }
+
+
+    &:not(:last-child) {
+        &::after {
+            position: absolute;
+            right: -11px;
+
+            content: '/';
+            color: var(--more-than-a-week);
+            // transform: translateX(-50%);
+        }
+    }
+}
+.page-settings__view {
+}
+
+.page-view {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.page-view__item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    color: #C5C5C5;
+
+    border: 1px solid #C5C5C5;
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    &.toggle {
+        color: var(--color-main);
+
+        border: 1px solid var(--color-main);
+    }
+}
+.page-view__icon {
+    width: 18px;
+    height: 18px;
+}
