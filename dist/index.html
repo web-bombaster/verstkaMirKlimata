@@ -145,15 +145,14 @@
               <form class="filter__form">
                 <fieldset class="filter__fieldset">
                   <legend class="filter__legend">Цена</legend>
-                  <div class="layout">
-                    <div>
-                      <input class="filter__input-text js-slider-inputmask" type="text">
+                  <div class="range">
+                    <div class="range__values">
+                      <input class="filter__input-text range__input range__input--min" type="text" data-value="15490" placeholder="от 15490">
+                      <input class="filter__input-text range__input range__input--max" type="text" data-value="775300" placeholder="до 775300">
                     </div>
-                    <div>&#32;-&#32;</div>
-                    <div>
-                      <input class="filter__input-text js-slider-inputmask" type="text">
+                    <div class="range__slider-wrapper">
+                      <div class="range__slider"></div>
                     </div>
-                    <div class="slider"></div>
                   </div>
                 </fieldset>
                 <fieldset class="filter__fieldset">

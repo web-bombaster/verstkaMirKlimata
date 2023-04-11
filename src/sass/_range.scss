@@ -1,0 +1,56 @@
+@use "sass:math";
+
+.range {
+}
+.range__values {
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.filter__input-text {
+}
+.range__input {
+    width: calc(50% - 10px / 2);
+}
+.range__input--min {
+}
+.range__input--max {
+
+}
+.range__slider-wrapper {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.range__slider {
+}
+
+.noUi-horizontal {
+    height: 4px;
+
+    background-color: #D3D3D3;
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+}
+.noUi-connect {
+    background-color: #C7DEF3;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 16px;
+    height: 16px;
+
+    right: -8px;
+
+    border-radius: 50%;
+    background-color: var(--color-main);
+
+    border: none;
+    box-shadow: none;
+
+    &::before, &::after {
+        display: none;
+    }
+}

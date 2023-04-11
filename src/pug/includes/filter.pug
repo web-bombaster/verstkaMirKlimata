@@ -11,13 +11,12 @@ mixin checkbox(title, count)
 
 		fieldset.filter__fieldset
 			legend.filter__legend Цена
-			.layout
-				div
-					input.filter__input-text.js-slider-inputmask(type="text")
-				div &#32;-&#32;
-				div
-					input.filter__input-text.js-slider-inputmask(type="text")
-				.slider
+			.range
+				.range__values
+					input.filter__input-text.range__input.range__input--min(type="text" data-value="15490" placeholder="от 15490")
+					input.filter__input-text.range__input.range__input--max(type="text" data-value="775300" placeholder="до 775300")
+				.range__slider-wrapper
+					.range__slider
 
 		fieldset.filter__fieldset
 			legend.filter__legend Мощность
