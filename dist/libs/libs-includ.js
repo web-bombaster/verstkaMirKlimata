@@ -4,5 +4,7 @@
 // include './../libs/inputmask.min.js'
 // include './../libs/fslightbox.js'
 // include './../libs/just-validate.production.min.js'
+// include './../libs/nouislider.min.js'
+// include './../libs/simple-scrollbar.min.js'
 
 // include './../js/common.min.js'

@@ -20,7 +20,8 @@ function rangeSliderInit(element) { // создаем функцию иници�
     });
 
     range.noUiSlider.on('update', function (values, handle) { // при изменений положения элементов управления слайдера изменяем соответствующие значения
-        inputs[handle].value = parseInt(values[handle]);
+        // inputs[handle].value = parseInt(values[handle]);
+        inputs[handle].value = new Intl.NumberFormat('ru-RU').format(parseInt(values[handle]));
     });
 
     inputMin.addEventListener('change', function () { // при изменении меньшего значения в input - меняем положение соответствующего элемента управления
