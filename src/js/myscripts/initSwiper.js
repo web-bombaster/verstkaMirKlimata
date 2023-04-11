@@ -3,6 +3,18 @@
 
 function initSwiper() {
 
+	if (document.querySelector('.filter__fieldset .swiper')) {
+		const filterSwiper = new Swiper('.filter__fieldset .swiper', {
+			direction: "vertical",
+			slidesPerView: "auto",
+			freeMode: true,
+			scrollbar: {
+				el: ".swiper-scrollbar",
+			},
+			mousewheel: true,
+		});
+	};
+
 	if (document.querySelector('.jsHeroSlider')) {
 		const prodSliderInner = new Swiper('.jsHeroSlider', {
 			spaceBetween: 20,

@@ -11,8 +11,9 @@ document.addEventListener(
 		// include './myscripts/form.js'
 		// include './myscripts/accordeon.js'
 		// include './myscripts/initSwiper.js'
-		// include './myscripts/range-init.js'
 		// include './myscripts/quantity-checkbox.js'
+		// include './myscripts/range-init.js'
+		// -include './myscripts/simple-scrollbar-init.js'
 		// include './myscripts/blazy-init.js'
 		// -include './myscripts/colorsCollection.js'
 	}

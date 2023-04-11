@@ -41,7 +41,8 @@ function checkboxListToggle() {
 		showAll.forEach(function(element) {
             // По щелчку на .show-all находим .filter__label,
 			element.addEventListener('click', function(e) {
-				const checkbox = this.parentNode.querySelectorAll('.filter__label');
+				// const checkbox = this.parentNode.querySelectorAll('.filter__label');
+				const checkbox = this.closest('.filter__box-checkbox').querySelectorAll('.filter__label');
 
                 // нужным элементам (>5) делаем toggle класса .toggle для показа / скрытия
                 for (let index = 0; index < checkbox.length; index++) {
@@ -55,9 +56,16 @@ function checkboxListToggle() {
                 element.classList.toggle('toggle');
                 if (element.classList.contains('toggle')) {
                     element.innerText = 'Свернуть';
+                    if (element.closest('.filter__box-checkbox.ss-container')) {
+                        element.closest('.filter__box-checkbox.ss-container').style.height = 370 + 'px';
+                    };
                 } else {
                     element.innerText = 'Показать все';
-                }
+                    if (element.closest('.filter__box-checkbox.ss-container')) {
+                        element.closest('.filter__box-checkbox.ss-container').removeAttribute('style');
+                    };
+                };
+
 			});
 		});
 	};

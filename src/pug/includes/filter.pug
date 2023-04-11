@@ -20,6 +20,7 @@ mixin checkbox(title, count)
 
 		fieldset.filter__fieldset
 			legend.filter__legend Мощность
+
 			.filter__box-checkbox
 				+checkbox('15 м² - 1,5 кВТ', '1174')
 				+checkbox('20 м² - 2 кВТ', '254')
@@ -35,15 +36,39 @@ mixin checkbox(title, count)
 				+checkbox('110 м² - 11,0 кВт', '1')
 				+checkbox('до 10,0 кВт', '15')
 
+
 		fieldset.filter__fieldset
 			legend.filter__legend Бренд
-			.filter__box-checkbox
-				+checkbox('Ballu', '1')
-				+checkbox('Mitsubishi', '174')
-				+checkbox('Haier', '254')
-				+checkbox('Electrolux', '23')
-				+checkbox('Subtropic', '143')
-				+checkbox('Aero', '22')
+			.filter__box-checkbox(ss-container)
+				+checkbox('Aero', '23')
+				+checkbox('Aeronik', '31')
+				+checkbox('AirGreen', '54')
+				+checkbox('Axioma', '41')
+				+checkbox('Ballu', '45')
+				+checkbox('Berlingtoun', '31')
+				+checkbox('Bosch', '76')
+				+checkbox('Centek', '43')
+				+checkbox('Cherbrooke', '78')
+				+checkbox('Daichi', '21')
+				+checkbox('Daikin', '9')
+				+checkbox('EcoStar', '42')
+				+checkbox('Electrolux', '27')
+				+checkbox('Fujitsu', '1')
+				+checkbox('Funai', '1')
+				+checkbox('Gree', '1')
+				+checkbox('Green', '1')
+				+checkbox('Haier', '1')
+				+checkbox('HEC', '1')
+				+checkbox('Hisense', '1')
+				+checkbox('Hitachi', '1')
+				+checkbox('JAX', '1')
+				+checkbox('Kentatsu', '1')
+				+checkbox('Lessar', '1')
+				+checkbox('LG', '1')
+				+checkbox('MDV', '1')
+				+checkbox('Midea', '1')
+				+checkbox('Mitsubishi', '1')
+
 
 		fieldset.filter__fieldset
 			legend.filter__legend Компрессор
