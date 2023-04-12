@@ -11,6 +11,7 @@
 }
 
 .page-sort {
+    position: relative;
 }
 
 .page-sort__current {
@@ -58,10 +59,11 @@
 }
 
 .page-sort__variants {
-    position: relative;
+    position: absolute;
+    // position: relative;
     display: none;
 
-    top: 4px;
+    top: 40px;
     z-index: 10;
 
     padding: 14px;
@@ -69,6 +71,7 @@
 
     font-size: 14px;
 
+    background-color: #fff;
     border: 1px solid var(--color-border-input);
     border-radius: var(--brs6);
 
@@ -78,6 +81,8 @@
 }
 
 .variants-item {
+    cursor: pointer;
+
     &:not(:last-child) {
         margin-bottom: 15px;
     }

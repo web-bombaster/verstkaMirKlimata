@@ -13,7 +13,7 @@ document.addEventListener(
 		// include './myscripts/initSwiper.js'
 		// include './myscripts/quantity-checkbox.js'
 		// include './myscripts/range-init.js'
-		// -include './myscripts/simple-scrollbar-init.js'
+		// include './myscripts/page-settings.js'
 		// include './myscripts/blazy-init.js'
 		// -include './myscripts/colorsCollection.js'
 	}
