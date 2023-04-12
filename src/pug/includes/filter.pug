@@ -7,7 +7,15 @@ mixin checkbox(title, count)
 		span.js-element-count (#{count})
 
 .catalog__filter.filter
+	//- button(type='button' disabled).btn.filter__btn.filter__btn-toggle.burger__menu-btn.js-burger
+	button(type='button' data-da="page-settings,0,1200").btn.filter__btn.filter__btn-toggle.burger__menu-btn.js-burger.jsFilterToggle
+		span
+		| Фильтр подбора
+
+
 	form.filter__form
+
+
 
 		fieldset.filter__fieldset
 			legend.filter__legend Цена
@@ -35,7 +43,6 @@ mixin checkbox(title, count)
 				+checkbox('100 м² - 10,0 кВт', '2')
 				+checkbox('110 м² - 11,0 кВт', '1')
 				+checkbox('до 10,0 кВт', '15')
-
 
 		fieldset.filter__fieldset
 			legend.filter__legend Бренд
@@ -69,7 +76,6 @@ mixin checkbox(title, count)
 				+checkbox('MDV', '1')
 				+checkbox('Midea', '1')
 				+checkbox('Mitsubishi', '1')
-
 
 		fieldset.filter__fieldset
 			legend.filter__legend Компрессор
@@ -113,3 +119,6 @@ mixin checkbox(title, count)
 				+checkbox('Турция', '1')
 				+checkbox('Чехия', '1')
 				+checkbox('Япония', '1')
+
+		button(type="submit").btn.filter__btn Применить
+		button(type="reset").btn.btn--light.filter__btn.filter__btn-reset Сбросить все

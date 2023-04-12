@@ -41,10 +41,11 @@ body {
 		background-color: var(--color-bg-page);
 	}
 
-	&.toggle {
-		height: 100vh;
+	&.toggle, &.toggle-filter {
+		// height: 100vh;
 		overflow-y: hidden;
 	}
+
 }
 
 *,
@@ -204,7 +205,15 @@ ul:not([class]) {
 }
 
 .content {
+	margin-bottom: 100px;
 
+	@media (max-width: $break_sm) {
+		margin-bottom: 70px;
+	}
+
+	h1 {
+		margin-bottom: 27px;
+	}
 }
 
 .section-header {

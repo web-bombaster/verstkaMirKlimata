@@ -7,7 +7,10 @@
 .filter__fieldset {
     padding: 0;
     border: none;
-    margin-bottom: 30px;
+
+    &:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
 
     .swiper {
         max-height: 200px;
@@ -137,6 +140,45 @@
     &:hover ~ .filter__checkbox-title::before,
     &:focus ~ .filter__checkbox-title::before {
         border: 2px solid var(--color-text);
+    }
+}
+
+.filter__btn {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.filter__btn-reset {
+    margin-top: 10px;
+}
+
+.filter__btn-toggle {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    text-transform: uppercase;
+
+    @media (max-width: 1400px) {
+        padding: 9px 15px 9px 45px;
+    }
+
+    @media (max-width: $break_lg) {
+        width: auto;
+
+        margin-bottom: 0;
+    }
+
+    @media (max-width: $break_xs) {
+        width: 100%;
+    }
+
+    &:disabled {
+        opacity: 1;
+        cursor: initial;
+
+        &:hover {
+            transform: none;
+        }
     }
 }
 

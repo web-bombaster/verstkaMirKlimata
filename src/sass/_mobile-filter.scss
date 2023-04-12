@@ -1,0 +1,26 @@
+@use "sass:math";
+
+.mobile-filter {
+    padding: 25px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
+
+    transform: translateX(-100%);
+
+    background-color: var(--color-border);
+    transition: .25s;
+
+    &.toggle {
+        transform: translateX(0);
+        max-height: 100vh;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+}

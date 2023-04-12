@@ -2,11 +2,21 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+
+    @media (max-width: $break_lg) {
+        flex-direction: column;
+    }
 }
 
 .catalog__filter {
-    max-width: 274px;
+    // max-width: 274px;
+    max-width: 18.26%;
+
     width: 100%;
+
+    @media (max-width: $break_lg) {
+        display: none;
+    }
 }
 
 .catalog__content {

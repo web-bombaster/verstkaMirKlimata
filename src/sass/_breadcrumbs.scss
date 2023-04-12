@@ -5,6 +5,10 @@
 	font-size: 14px;
 	color: var(--more-than-a-week);
 
+	@media (max-width: 1200px) {
+		margin-top: 18px;
+	}
+
 	@media screen and (max-width: $break_md) {
 		font-size: 13px;
 	}
