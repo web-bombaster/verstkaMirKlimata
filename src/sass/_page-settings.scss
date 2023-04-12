@@ -76,6 +76,7 @@
         display: block;
     }
 }
+
 .variants-item {
     &:not(:last-child) {
         margin-bottom: 15px;
@@ -85,12 +86,15 @@
         color: var(--color-main);
     }
 }
+
 .page-settings__count {
 }
+
 .page-count {
     display: flex;
     gap: 16px;
 }
+
 .page-count__item {
     padding: 5px;
     position: relative;
@@ -115,6 +119,7 @@
         }
     }
 }
+
 .page-settings__view {
 }
 
@@ -125,6 +130,7 @@
     align-items: center;
     gap: 8px;
 }
+
 .page-view__item {
     position: relative;
 
@@ -148,6 +154,7 @@
         border: 1px solid var(--color-main);
     }
 }
+
 .page-view__icon {
     width: 18px;
     height: 18px;

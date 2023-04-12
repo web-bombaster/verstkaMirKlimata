@@ -12,6 +12,10 @@
     .swiper {
         max-height: 200px;
     }
+
+    .ss-scroll {
+        width: 4px;
+    }
 }
 
 
@@ -134,4 +138,8 @@
     &:focus ~ .filter__checkbox-title::before {
         border: 2px solid var(--color-text);
     }
+}
+
+.ss-scroll {
+    width: 4px;
 }
