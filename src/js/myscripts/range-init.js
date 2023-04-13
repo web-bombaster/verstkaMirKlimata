@@ -7,6 +7,20 @@ function rangeSliderInit(element) { // создаем функцию иници�
 
     if (!range || !inputMin || !inputMax) return; // если этих элементов нет, прекращаем выполнение функции, чтобы не было ошибок
 
+    // start - для ранее инициализированных элементов делаем destroy,
+    function destroyExistingSlider(){
+        if(range && range.noUiSlider) {
+            range.noUiSlider.destroy();
+        };
+    };
+
+    destroyExistingSlider();
+
+    // удаляем ненужный дубль блока после destroy
+    if (range.querySelector('.noUi-base')) {
+        range.querySelector('.noUi-base').remove();
+    };
+
     const inputs = [inputMin, inputMax]; // создаем массив из меньшего и большего значения
 
     // range.noUiSlider.destroy();

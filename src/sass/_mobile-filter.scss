@@ -3,7 +3,8 @@
 .mobile-filter {
     padding: 25px;
 
-    position: absolute;
+    // position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: 100;
