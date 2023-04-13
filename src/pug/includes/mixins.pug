@@ -41,17 +41,18 @@ mixin productItemNoSlide(title, src, price, oldprice, discount, nalichie, populy
 
 			.product-item__actions
 
-				.product-item__buy.buy
-					if vkorzine == '1'
-						.product-item__btn.component-catalog-actions-buy.isSent(title="Добавлено в корзину")
-							svg
-								use(xlink:href='img/sprite.svg#check')
-							span В корзине
-					if vkorzine == '0'
-						.product-item__btn.component-catalog-actions-buy(title="Добавить в корзину")
-							svg
-								use(xlink:href='img/sprite.svg#shop-cart')
-							span В корзину
+
+				if vkorzine == '1'
+					.product-item__btn.buy.isSent(title="Добавлено в корзину")
+						svg
+							use(xlink:href='img/sprite.svg#check')
+						span В корзине
+				if vkorzine == '0'
+					//- .product-item__btn.component-catalog-actions-buy(title="Добавить в корзину")
+					.product-item__btn.buy(title="Добавить в корзину")
+						svg
+							use(xlink:href='img/sprite.svg#shop-cart')
+						span В корзину
 
 				//- .product-item__bookmark.bookmark
 				.product-item__btn-box
@@ -66,12 +67,12 @@ mixin productItemNoSlide(title, src, price, oldprice, discount, nalichie, populy
 								use(xlink:href='img/sprite.svg#shop-favourites')
 
 					if sravnenie == '1'
-						.product-item__btn.product-item__compare.compare(title="Добавлено в сравнение")
+						.product-item__btn.compare(title="Добавлено в сравнение")
 							svg
 								use(xlink:href='img/sprite.svg#shop-compare')
 
 					if sravnenie == '0'
-						.product-item__btn.product-item__compare.compare(title="Добавить в сравнение")
+						.product-item__btn.compare(title="Добавить в сравнение")
 							svg
 								use(xlink:href='img/sprite.svg#shop-compare')
 
@@ -134,12 +135,12 @@ mixin productItem(title, src, price, oldprice, discount, nalichie, populyarno, r
 							svg
 								use(xlink:href='img/sprite.svg#shop-cart')
 				if sravnenie == '1'
-					.product-item__compare.compare(title="Добавлено в сравнение")
+					.compare(title="Добавлено в сравнение")
 						.product-item__btn.component-catalog-actions-compare.isSent
 							svg
 								use(xlink:href='img/sprite.svg#shop-compare')
 				if sravnenie == '0'
-					.product-item__compare.compare(title="Добавить в сравнение")
+					.compare(title="Добавить в сравнение")
 						.product-item__btn.component-catalog-actions-compare
 							svg
 								use(xlink:href='img/sprite.svg#shop-compare')

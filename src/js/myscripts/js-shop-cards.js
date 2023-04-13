@@ -19,7 +19,7 @@ document.querySelector('body').addEventListener("click", function (e) {
     if (e.target.closest('.buy')) {
         e.preventDefault();
 
-        const btn = e.target.closest('.buy').firstElementChild;
+        const btn = e.target.closest('.buy');
         btn.classList.toggle('isSent');
 
         if (btn.classList.contains('isSent')) {

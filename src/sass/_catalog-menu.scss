@@ -193,6 +193,25 @@
 
     transition: opacity .1s, height .25s, transform .25s;
 
+    .mobile-menu & {
+        position: relative;
+        padding-left: 40px;
+
+        &.toggle {
+            padding-bottom: 10px;
+        }
+
+        // &::before {
+        //     position: absolute;
+        //     content: '';
+        //     width: 1px;
+        //     height: 100%;
+        //     top: 0;
+        //     left: 18px;
+        //     background-color: rgba(#000, .1);
+        // }
+    }
+
     &.toggle {
         transform: scaleY(1);
         transform-origin: top;
