@@ -64,6 +64,8 @@ let pageViewToggle = function() {
 
         btnView.forEach(function(element) {
             element.addEventListener('click', function() {
+                const products = document.querySelector('.products-inner');
+                // const productsClassDefault = '.products-inner';
 
                 // по клику у всех убираем .toggle, а у активного добавляем его
                 btnView.forEach(function(element) {
@@ -73,7 +75,8 @@ let pageViewToggle = function() {
 
                 // Достаем имя класса из дата атрибута и раздем его сетке товаров
                 gridClass = this.getAttribute('data-class');
-
+                products.setAttribute('class', 'products-inner'); // возвращаем каждый раз в начальное состояние, чтобы не накапливать классы
+                products.classList.add(gridClass);
             });
         });
     };

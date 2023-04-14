@@ -12,6 +12,7 @@ document.addEventListener(
 		// include './myscripts/toggle-menu.js'
 		// -include './myscripts/hidden-text.js'
 		// include './myscripts/form.js'
+		// include './myscripts/block-copy.js'
 		// include './myscripts/accordeon.js'
 		// include './myscripts/initSwiper.js'
 		// include './myscripts/page-settings.js'
