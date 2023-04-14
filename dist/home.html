@@ -10,7 +10,7 @@
     <link href="css/main.min.css" rel="stylesheet">
     <script src="js/scripts.min.js" defer></script>
   </head>
-  <body>
+  <body class="home">
     <div class="visible" id="preloader"></div>
     <div class="header">
       <div class="header__top header-top">
@@ -136,7 +136,7 @@
         <div class="container hero__container">
           <div class="hero__slider-box">
             <div class="hero__slider hero-slider swiper jsHeroSlider">
-              <div class="hero-slider__wrapper swiper-wrapper"><a class="hero-slider__item swiper-slide" href="#"><img class="hero-slider__img" src="../../img/hero-slider/01.jpg" alt="" loading="lazy"></a><a class="hero-slider__item swiper-slide" href="#"><img class="hero-slider__img" src="../../img/hero-slider/02.jpg" alt="" loading="lazy"></a></div>
+              <div class="hero-slider__wrapper swiper-wrapper"><a class="hero-slider__item swiper-slide" href="#"><img class="hero-slider__img" src="img/hero-slider/01.jpg" alt="" loading="lazy"></a><a class="hero-slider__item swiper-slide" href="#"><img class="hero-slider__img" src="img/hero-slider/02.jpg" alt="" loading="lazy"></a></div>
               <div class="hero-slider__next swiper__next"></div>
               <div class="hero-slider__prev swiper__prev"></div>
             </div>
@@ -146,41 +146,46 @@
               <svg class="icon">
                 <use xlink:href="img/sprite.svg#fire"></use>
               </svg>Лучшее предложение
-            </h2><a class="products-list__item product-item swiper-slide" href="#">
-              <div class="product-item__labels labels">
-                <div class="labels__item labels__popular">Популярно</div>
-              </div>
-              <div class="product-item__bookmark bookmark">
-                <div class="component-catalog-actions-bookmark" title="Добавить в избранное">
-                  <svg>
-                    <use xlink:href="img/sprite.svg#shop-favourites"></use>
-                  </svg>
+            </h2><a class="products-list__item product-item" href="#">
+              <div class="product-item__head">
+                <div class="product-item__labels labels">
+                  <div class="labels__item labels__popular">Популярно</div>
                 </div>
+                <div class="product-item__img"><img src="img/products/00.jpg" alt="" loading="lazy"/></div>
               </div>
-              <div class="product-item__img"><img src="img/products/00.jpg" alt="" loading="lazy"/></div>
-              <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
-              <div class="product-item__info">
-                <div class="product-item__availability product-item__availability--true">В наличии
-                  <svg>
-                    <use xlink:href="img/sprite.svg#shop-in-stock"></use>
-                  </svg>
+              <div class="product-item__middle">
+                <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                <div class="product-item__info">
+                  <div class="product-item__params product-params">
+                    <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                    <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                    <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                    <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                  </div>
+                  <div class="product-item__availability product-item__availability--true">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                    </svg>В наличии
+                  </div>
                 </div>
-                <div class="product-item__params params"><span class="params__name">Площадь:</span><span class="params__value">20 м²</span></div>
-                <div class="product-item__params params"><span class="params__name">Инвертор:</span><span class="params__value">Да</span></div>
               </div>
               <div class="product-item__footer">
                 <div class="product-item__price">16 400 ₽
                 </div>
                 <div class="product-item__actions">
-                  <div class="product-item__buy buy">
-                    <div class="product-item__btn component-catalog-actions-buy" title="Добавить в корзину">
+                  <div class="product-item__btn buy" title="Добавить в корзину">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#shop-cart"></use>
+                    </svg><span>В корзину</span>
+                  </div>
+                  <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                  <div class="product-item__btn-box">
+                    <div class="product-item__btn bookmark" title="Добавить в избранное">
                       <svg>
-                        <use xlink:href="img/sprite.svg#shop-cart"></use>
+                        <use xlink:href="img/sprite.svg#shop-favourites"></use>
                       </svg>
                     </div>
-                  </div>
-                  <div class="product-item__compare compare" title="Добавлено в сравнение">
-                    <div class="product-item__btn component-catalog-actions-compare isSent">
+                    <div class="product-item__btn compare" title="Добавлено в сравнение">
                       <svg>
                         <use xlink:href="img/sprite.svg#shop-compare"></use>
                       </svg>
@@ -225,37 +230,35 @@
                         <div class="labels__item labels__popular">Популярно</div>
                         <div class="labels__item labels__installment">Рассрочка</div>
                       </div>
-                      <div class="product-item__bookmark bookmark">
-                        <div class="component-catalog-actions-bookmark" title="Добавить в избранное">
-                          <svg>
-                            <use xlink:href="img/sprite.svg#shop-favourites"></use>
-                          </svg>
-                        </div>
-                      </div>
                       <div class="product-item__img"><img src="img/products/01.jpg" alt="" loading="lazy"/></div>
                       <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
                       <div class="product-item__info">
+                        <div class="product-item__params product-params">
+                          <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                          <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                        </div>
                         <div class="product-item__availability product-item__availability--true">В наличии
                           <svg>
                             <use xlink:href="img/sprite.svg#shop-in-stock"></use>
                           </svg>
                         </div>
-                        <div class="product-item__params params"><span class="params__name">Площадь:</span><span class="params__value">20 м²</span></div>
-                        <div class="product-item__params params"><span class="params__name">Инвертор:</span><span class="params__value">Да</span></div>
                       </div>
                       <div class="product-item__footer">
                         <div class="product-item__price">16 400 ₽
                         </div>
                         <div class="product-item__actions">
-                          <div class="product-item__buy buy">
-                            <div class="product-item__btn component-catalog-actions-buy isSent" title="Добавлено в корзину">
+                          <div class="product-item__btn buy isSent" title="Добавлено в корзину">
+                            <svg>
+                              <use xlink:href="img/sprite.svg#check"></use>
+                            </svg><span>В корзине</span>
+                          </div>
+                          <div class="product-item__btn-box">
+                            <div class="product-item__btn bookmark" title="Добавить в избранное">
                               <svg>
-                                <use xlink:href="img/sprite.svg#check"></use>
+                                <use xlink:href="img/sprite.svg#shop-favourites"></use>
                               </svg>
                             </div>
-                          </div>
-                          <div class="product-item__compare compare" title="Добавлено в сравнение">
-                            <div class="product-item__btn component-catalog-actions-compare isSent">
+                            <div class="product-item__btn compare" title="Добавлено в сравнение">
                               <svg>
                                 <use xlink:href="img/sprite.svg#shop-compare"></use>
                               </svg>
@@ -265,33 +268,31 @@
                       </div></a><a class="products-list__item product-item swiper-slide" href="#">
                       <div class="product-item__labels labels">
                       </div>
-                      <div class="product-item__bookmark bookmark">
-                        <div class="component-catalog-actions-bookmark isSent" title="Удалить из избранного">
-                          <svg>
-                            <use xlink:href="img/sprite.svg#shop-favourites-fill"></use>
-                          </svg>
-                        </div>
-                      </div>
                       <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"/></div>
                       <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
                       <div class="product-item__info">
+                        <div class="product-item__params product-params">
+                          <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                          <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                        </div>
                         <div class="product-item__availability">Под заказ</div>
-                        <div class="product-item__params params"><span class="params__name">Площадь:</span><span class="params__value">20 м²</span></div>
-                        <div class="product-item__params params"><span class="params__name">Инвертор:</span><span class="params__value">Да</span></div>
                       </div>
                       <div class="product-item__footer">
                         <div class="product-item__price">757 500 ₽<span class="old-price">859 500 ₽</span><span class="discount">-24%</span>
                         </div>
                         <div class="product-item__actions">
-                          <div class="product-item__buy buy">
-                            <div class="product-item__btn component-catalog-actions-buy" title="Добавить в корзину">
+                          <div class="product-item__btn buy" title="Добавить в корзину">
+                            <svg>
+                              <use xlink:href="img/sprite.svg#shop-cart"></use>
+                            </svg><span>В корзину</span>
+                          </div>
+                          <div class="product-item__btn-box">
+                            <div class="product-item__btn bookmark isSent" title="Удалить из избранного">
                               <svg>
-                                <use xlink:href="img/sprite.svg#shop-cart"></use>
+                                <use xlink:href="img/sprite.svg#shop-favourites-fill"></use>
                               </svg>
                             </div>
-                          </div>
-                          <div class="product-item__compare compare" title="Добавить в сравнение">
-                            <div class="product-item__btn component-catalog-actions-compare">
+                            <div class="product-item__btn compare" title="Добавить в сравнение">
                               <svg>
                                 <use xlink:href="img/sprite.svg#shop-compare"></use>
                               </svg>
@@ -302,37 +303,35 @@
                       <div class="product-item__labels labels">
                         <div class="labels__item labels__popular">Популярно</div>
                       </div>
-                      <div class="product-item__bookmark bookmark">
-                        <div class="component-catalog-actions-bookmark" title="Добавить в избранное">
-                          <svg>
-                            <use xlink:href="img/sprite.svg#shop-favourites"></use>
-                          </svg>
-                        </div>
-                      </div>
                       <div class="product-item__img"><img src="img/products/03.jpg" alt="" loading="lazy"/></div>
                       <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
                       <div class="product-item__info">
+                        <div class="product-item__params product-params">
+                          <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                          <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                        </div>
                         <div class="product-item__availability product-item__availability--true">В наличии
                           <svg>
                             <use xlink:href="img/sprite.svg#shop-in-stock"></use>
                           </svg>
                         </div>
-                        <div class="product-item__params params"><span class="params__name">Площадь:</span><span class="params__value">20 м²</span></div>
-                        <div class="product-item__params params"><span class="params__name">Инвертор:</span><span class="params__value">Да</span></div>
                       </div>
                       <div class="product-item__footer">
                         <div class="product-item__price">57 500 ₽
                         </div>
                         <div class="product-item__actions">
-                          <div class="product-item__buy buy">
-                            <div class="product-item__btn component-catalog-actions-buy" title="Добавить в корзину">
+                          <div class="product-item__btn buy" title="Добавить в корзину">
+                            <svg>
+                              <use xlink:href="img/sprite.svg#shop-cart"></use>
+                            </svg><span>В корзину</span>
+                          </div>
+                          <div class="product-item__btn-box">
+                            <div class="product-item__btn bookmark" title="Добавить в избранное">
                               <svg>
-                                <use xlink:href="img/sprite.svg#shop-cart"></use>
+                                <use xlink:href="img/sprite.svg#shop-favourites"></use>
                               </svg>
                             </div>
-                          </div>
-                          <div class="product-item__compare compare" title="Добавить в сравнение">
-                            <div class="product-item__btn component-catalog-actions-compare">
+                            <div class="product-item__btn compare" title="Добавить в сравнение">
                               <svg>
                                 <use xlink:href="img/sprite.svg#shop-compare"></use>
                               </svg>
@@ -343,37 +342,35 @@
                       <div class="product-item__labels labels">
                         <div class="labels__item labels__installment">Рассрочка</div>
                       </div>
-                      <div class="product-item__bookmark bookmark">
-                        <div class="component-catalog-actions-bookmark" title="Добавить в избранное">
-                          <svg>
-                            <use xlink:href="img/sprite.svg#shop-favourites"></use>
-                          </svg>
-                        </div>
-                      </div>
                       <div class="product-item__img"><img src="img/products/04.jpg" alt="" loading="lazy"/></div>
                       <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
                       <div class="product-item__info">
+                        <div class="product-item__params product-params">
+                          <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                          <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                        </div>
                         <div class="product-item__availability product-item__availability--true">В наличии
                           <svg>
                             <use xlink:href="img/sprite.svg#shop-in-stock"></use>
                           </svg>
                         </div>
-                        <div class="product-item__params params"><span class="params__name">Площадь:</span><span class="params__value">20 м²</span></div>
-                        <div class="product-item__params params"><span class="params__name">Инвертор:</span><span class="params__value">Да</span></div>
                       </div>
                       <div class="product-item__footer">
                         <div class="product-item__price">67 900 ₽
                         </div>
                         <div class="product-item__actions">
-                          <div class="product-item__buy buy">
-                            <div class="product-item__btn component-catalog-actions-buy" title="Добавить в корзину">
+                          <div class="product-item__btn buy" title="Добавить в корзину">
+                            <svg>
+                              <use xlink:href="img/sprite.svg#shop-cart"></use>
+                            </svg><span>В корзину</span>
+                          </div>
+                          <div class="product-item__btn-box">
+                            <div class="product-item__btn bookmark" title="Добавить в избранное">
                               <svg>
-                                <use xlink:href="img/sprite.svg#shop-cart"></use>
+                                <use xlink:href="img/sprite.svg#shop-favourites"></use>
                               </svg>
                             </div>
-                          </div>
-                          <div class="product-item__compare compare" title="Добавить в сравнение">
-                            <div class="product-item__btn component-catalog-actions-compare">
+                            <div class="product-item__btn compare" title="Добавить в сравнение">
                               <svg>
                                 <use xlink:href="img/sprite.svg#shop-compare"></use>
                               </svg>
@@ -383,37 +380,35 @@
                       </div></a><a class="products-list__item product-item swiper-slide" href="#">
                       <div class="product-item__labels labels">
                       </div>
-                      <div class="product-item__bookmark bookmark">
-                        <div class="component-catalog-actions-bookmark" title="Добавить в избранное">
-                          <svg>
-                            <use xlink:href="img/sprite.svg#shop-favourites"></use>
-                          </svg>
-                        </div>
-                      </div>
                       <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"/></div>
                       <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
                       <div class="product-item__info">
+                        <div class="product-item__params product-params">
+                          <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                          <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                        </div>
                         <div class="product-item__availability product-item__availability--true">В наличии
                           <svg>
                             <use xlink:href="img/sprite.svg#shop-in-stock"></use>
                           </svg>
                         </div>
-                        <div class="product-item__params params"><span class="params__name">Площадь:</span><span class="params__value">20 м²</span></div>
-                        <div class="product-item__params params"><span class="params__name">Инвертор:</span><span class="params__value">Да</span></div>
                       </div>
                       <div class="product-item__footer">
                         <div class="product-item__price">22 400 ₽
                         </div>
                         <div class="product-item__actions">
-                          <div class="product-item__buy buy">
-                            <div class="product-item__btn component-catalog-actions-buy isSent" title="Добавлено в корзину">
+                          <div class="product-item__btn buy isSent" title="Добавлено в корзину">
+                            <svg>
+                              <use xlink:href="img/sprite.svg#check"></use>
+                            </svg><span>В корзине</span>
+                          </div>
+                          <div class="product-item__btn-box">
+                            <div class="product-item__btn bookmark" title="Добавить в избранное">
                               <svg>
-                                <use xlink:href="img/sprite.svg#check"></use>
+                                <use xlink:href="img/sprite.svg#shop-favourites"></use>
                               </svg>
                             </div>
-                          </div>
-                          <div class="product-item__compare compare" title="Добавить в сравнение">
-                            <div class="product-item__btn component-catalog-actions-compare">
+                            <div class="product-item__btn compare" title="Добавить в сравнение">
                               <svg>
                                 <use xlink:href="img/sprite.svg#shop-compare"></use>
                               </svg>
@@ -504,7 +499,7 @@
             <div class="banner__box">
               <h2 class="banner__header">Бесплатная доставка по&nbsp;Ростову-на-дону</h2>
               <p class="banner__descr">При заказе от 10 000 руб. Доставка по&nbsp;Ростовской области - 25 руб/км</p>
-            </div><img class="banner__img" src="../../img/banners/bg-banner-01.jpg" alt="">
+            </div><img class="banner__img" src="img/banners/bg-banner-01.jpg" alt="">
           </div>
         </div>
       </section>
@@ -535,7 +530,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__row">
-          <div class="footer__col footer__col--logo"><a class="footer__logo" href="/"><img src="../../img/logo-footer.png" alt=""></a>
+          <div class="footer__col footer__col--logo"><a class="footer__logo" href="/"><img src="img/logo-footer.png" alt=""></a>
             <div class="footer__copy">Мир Климата © 2021. Все права защищены</div>
           </div>
           <div class="footer__col footer__col--menu">
@@ -575,12 +570,14 @@
       </div>
     </footer>
     <div class="mobile-menu">
-      <div class="mobile-menu__search"></div>
+      <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__search"></div>
+        <div class="mobile-menu__title catalog">Каталог</div>
+        <div class="mobile-menu__catalog"></div>
+        <div class="mobile-menu__title menu">Меню</div>
+        <div class="mobile-menu__menu"></div>
+      </div>
       <div class="mobile-menu__btns"></div>
-      <div class="mobile-menu__title catalog">Каталог</div>
-      <div class="mobile-menu__catalog"></div>
-      <div class="mobile-menu__title menu">Меню</div>
-      <div class="mobile-menu__menu"></div>
     </div>
   </body>
 </html>

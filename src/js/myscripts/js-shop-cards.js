@@ -12,8 +12,8 @@ document.querySelector('body').addEventListener("click", function (e) {
         } else {
             btn.setAttribute('title', 'Добавить в избранное');
             btn.firstElementChild.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#shop-favourites');
-        }
-    }
+        };
+    };
 
     // добавление в корзину
     if (e.target.closest('.buy')) {
@@ -30,13 +30,13 @@ document.querySelector('body').addEventListener("click", function (e) {
             btn.setAttribute('title', 'Добавить в корзину');
             btn.firstElementChild.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#shop-cart');
             btn.querySelector('span').innerText = 'В корзину';
-        }
-    }
+        };
+    };
 
-    // добавление в сравнение
-    if (e.target.closest('.compare')) {
+    // при нажатии ряда кнопок на карточке, убираем дефолтное поведение, переключаем класс активности
+    if (e.target.closest('.compare, .credit')) {
         e.preventDefault();
-        e.target.closest('.compare').classList.toggle('isSent');
-    }
+        e.target.closest('.compare, .credit').classList.toggle('isSent');
+    };
 });
 
