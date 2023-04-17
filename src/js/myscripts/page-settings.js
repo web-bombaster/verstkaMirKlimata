@@ -82,3 +82,21 @@ let pageViewToggle = function() {
     };
 };
 pageViewToggle();
+
+// по щелчку изменяем активность кнопок количества товаров на странице
+let productModelToggle = function() {
+    if (document.querySelector('.product-model__item')) {
+        const btnCount = document.querySelectorAll('.product-model__item');
+
+        // по клику у всех убираем .toggle, а у активного добавляем его
+        btnCount.forEach(function(element) {
+            element.addEventListener('click', function() {
+                btnCount.forEach(function(element) {
+                    element.classList.remove('toggle');
+                });
+                this.classList.toggle('toggle');
+            });
+        });
+    };
+};
+productModelToggle();

@@ -1,0 +1,150 @@
+.product-page
+
+	.product-page__main.product-main
+
+		.product-main__box
+
+			.product-main__photo.product-photo
+				img(src="/img/products/01.jpg", alt="")
+				//- .product-photo__slider.slider-photo.swiper
+					.slider-photo__wrapper.swiper-wrapper
+						.slider-photo__img.swiper-slide
+							img(src="/img/products/01.jpg", alt="")
+						.slider-photo__img.swiper-slide
+							img(src="/img/products/02.jpg", alt="")
+						.slider-photo__img.swiper-slide
+							img(src="/img/products/03.jpg", alt="")
+						.slider-photo__img.swiper-slide
+							img(src="/img/products/04.jpg", alt="")
+						.slider-photo__img.swiper-slide
+							img(src="/img/products/01.jpg", alt="")
+						.slider-photo__img.swiper-slide
+							img(src="/img/products/02.jpg", alt="")
+
+				//- .product-photo__thumbs.slider-thumbs.swiper
+					.slider-thumbs__wrapper.swiper-wrapper
+						img(src="/img/products/01.jpg", alt="").slider-thumbs__img.swiper-slide
+						img(src="/img/products/02.jpg", alt="").slider-thumbs__img.swiper-slide
+						img(src="/img/products/03.jpg", alt="").slider-thumbs__img.swiper-slide
+						img(src="/img/products/04.jpg", alt="").slider-thumbs__img.swiper-slide
+						img(src="/img/products/01.jpg", alt="").slider-thumbs__img.swiper-slide
+						img(src="/img/products/02.jpg", alt="").slider-thumbs__img.swiper-slide
+
+			.product-main__info.product-info
+				.product-info__item
+					.product-info__title Характеристики
+
+					.product-item__params.product-params
+						.product-params__item
+							span.product-params__name Площадь:
+							span.product-params__value 20 м²
+						.product-params__item
+							span.product-params__name Режим работы:
+							span.product-params__value Охлаждение и обогрев
+						.product-params__item
+							span.product-params__name Гарантия:
+							span.product-params__value 1,5 года
+						.product-params__item
+							span.product-params__name Инвертор:
+							span.product-params__value Да
+
+				.product-info__item
+					.product-info__title Модельный ряд
+
+					.product-info__model.product-model
+
+						button.product-model__item.toggle до 10 м²
+						button.product-model__item до 15 м²
+						a(href="#").product-model__item до 20 м²
+						button.product-model__item до 30 м²
+						button.product-model__item до 35 м²
+
+				.product-info__item
+					.product-info__title Бренд
+					a(href="#") Ultima comfort
+
+		.product-main__tabs.product-tabs.tabs
+
+			.product-tabs__btns.tabs-btns
+				.product-tabs__btn.tabs-btn__item.toggle Описание
+				.product-tabs__btn.tabs-btn__item Характеристики
+				.product-tabs__btn.tabs-btn__item Гарантия и оплата
+				.product-tabs__btn.tabs-btn__item Монтаж
+
+			.product-tabs__descrs.tabs-descr
+				.product-tabs__descr.tabs-descr__item.toggle
+					p Сплит-система Ultima Comfort EXP-07PN настенного типа серии «Explorer» обладает всеми самыми необходимыми режимами и функциям позволяющими максимально быстро создать благоприятный микроклимат в помещении.
+
+					p Внутренний блок наделён компактным лаконичным дизайном. Плавность линий придают внутреннему блоку утонченный и изысканный внешний вид. На лицевой панели блока расположен скрытый LED дисплей отображающий всю информацию о работе сплит-системы.
+
+					p ИК-пульт управления входит в комплект, с его помощью можно переключать функции, регулировать режимы, например, такие как:
+
+					ul
+						li Ночной режим. В этом режиме работы кондиционер автоматически снижает уровень шума, за счёт снижения скорости вращения лопастей вентилятора. Таким образом увеличивается комфорт и снижается потребление электроэнергии.
+						li Автоматический перезапуск. Данная функция автоматически перезапустит кондиционер после отключения электропитания, восстановит работу с прежними настройками.
+						li Функция самодиагностики. Позволяет определить причину неисправности в кратчайшие сроки.
+						li Наружный блок оснащён высокоэффективным компрессором GREE не инверторного типа.
+
+				.product-tabs__descr.tabs-descr__item
+					p Характеристики
+
+				.product-tabs__descr.tabs-descr__item
+					p Гарантия и оплата
+
+				.product-tabs__descr.tabs-descr__item
+					p Монтаж
+
+	.product-page__aside.product-aside
+
+		.product-aside__block.product-block
+			.product-item__availability.product-item__availability--true
+				svg
+					use(xlink:href='img/sprite.svg#shop-in-stock')
+				| В наличии
+			.product-item__footer
+				.product-item__price 57 500 руб
+					span.old-price 59 500 руб
+					span.discount -24%
+				.product-item__actions
+					.product-item__btn.buy(title="Добавить в корзину")
+						svg
+							use(xlink:href='img/sprite.svg#shop-cart')
+						span В корзину
+					.product-item__btn.credit
+						span Купить в рассрочку
+				.product-item__btn-box
+					.product-item__btn.bookmark(title="Добавить в избранное") В избранное
+						svg
+							use(xlink:href='img/sprite.svg#shop-favourites')
+					.product-item__btn.compare(title="Добавить в сравнение") Сравнить
+						svg
+							use(xlink:href='img/sprite.svg#shop-compare')
+
+
+		.product-aside__block.product-block
+			.product-block__title Способы доставки по Ростову-на-Дону
+			p  <a href='#'>Самовывоз из магазина</a> - бесплатно
+			p Доставка курьером - завтра, 300 руб
+			p от 10 000 руб - бесплатно по Ростову
+
+		.product-aside__block.product-block
+			.product-block__title
+				svg
+					use(xlink:href='img/sprite.svg#actions')
+				| Акции для этого товара
+			p <span>2% скидка</span> при оплате онлайн
+			p <span>2% скидка</span> на самовывоз
+			p <span>3% скидка</span> при оплате по счету
+
+		.product-aside__block.product-block.advantages
+			ul.advantages__list
+				li.advantages__item
+					img(src="/img/advantages/01.svg", alt="").advantages__icon
+					.advantages__title Персональные скидки
+				li.advantages__item
+					img(src="/img/advantages/02.svg", alt="").advantages__icon
+					.advantages__title Доставка по всей России
+				li.advantages__item
+					img(src="/img/advantages/03.svg", alt="").advantages__icon
+					.advantages__title Официальная гарантия
+

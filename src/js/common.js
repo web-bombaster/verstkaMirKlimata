@@ -18,5 +18,6 @@ document.addEventListener(
 		// include './myscripts/page-settings.js'
 		// include './myscripts/blazy-init.js'
 		// -include './myscripts/colorsCollection.js'
+		// include './myscripts/tabs.js'
 	}
 );

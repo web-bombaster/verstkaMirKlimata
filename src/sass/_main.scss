@@ -51,7 +51,7 @@ body {
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -326,6 +326,7 @@ h3:not([class]) {
 	background-position: center;
 
 	box-shadow: rem rem .3rem rem #b3b3b3;
+	border: 1px solid var(--color-border);
 
 	z-index: 1;
 	cursor: pointer;

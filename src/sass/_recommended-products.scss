@@ -1,0 +1,11 @@
+.recommended-products {
+    margin-bottom: var(--indentBlocks);
+
+    main ~ & {
+        margin-top: -40px;
+    }
+}
+
+.recommended-products-slider {
+    position: relative;
+}
