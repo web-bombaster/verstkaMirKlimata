@@ -92,33 +92,44 @@ mixin productItemNoSlide(title, src, price, oldprice, discount, nalichie, populy
 mixin productItem(title, src, price, oldprice, discount, nalichie, populyarno, rassrochka, izbranno, vkorzine, sravnenie)
 	a(href="#").products-list__item.product-item.swiper-slide
 
-		.product-item__labels.labels
-			if populyarno == '1'
-				.labels__item.labels__popular Популярно
-			if rassrochka == '1'
-				.labels__item.labels__installment Рассрочка
+		.product-item__head
 
-		.product-item__img
-			img(src="img/products/"+src, alt="", loading="lazy")
+			.product-item__labels.labels
+				if populyarno == '1'
+					.labels__item.labels__popular Популярно
+				if rassrochka == '1'
+					.labels__item.labels__installment Рассрочка
 
-		.product-item__title #{title}
+			.product-item__img
+				img(src="img/products/"+src, alt="", loading="lazy")
 
-		.product-item__info
+		.product-item__middle
 
-			.product-item__params.product-params
-				.product-params__item
-					span.product-params__name Площадь:
-					span.product-params__value 20 м²
-				.product-params__item
-					span.product-params__name Инвертор:
-					span.product-params__value Да
+			.product-item__title #{title}
 
-			if nalichie == '0'
-				.product-item__availability Под заказ
-			if nalichie == '1'
-				.product-item__availability.product-item__availability--true В наличии
-					svg
-						use(xlink:href='img/sprite.svg#shop-in-stock')
+			.product-item__info
+
+				.product-item__params.product-params
+					.product-params__item
+						span.product-params__name Площадь:
+						span.product-params__value 20 м²
+					.product-params__item
+						span.product-params__name Режим работы:
+						span.product-params__value Охлаждение и обогрев
+					.product-params__item
+						span.product-params__name Гарантия:
+						span.product-params__value 1,5 года
+					.product-params__item
+						span.product-params__name Инвертор:
+						span.product-params__value Да
+
+				if nalichie == '0'
+					.product-item__availability Под заказ
+				if nalichie == '1'
+					.product-item__availability.product-item__availability--true
+						svg
+							use(xlink:href='img/sprite.svg#shop-in-stock')
+						| В наличии
 
 		.product-item__footer
 
@@ -141,6 +152,9 @@ mixin productItem(title, src, price, oldprice, discount, nalichie, populyarno, r
 						svg
 							use(xlink:href='img/sprite.svg#shop-cart')
 						span В корзину
+
+				.product-item__btn.credit
+					span Купить в рассрочку
 
 				.product-item__btn-box
 					if izbranno == '1'

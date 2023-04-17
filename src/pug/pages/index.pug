@@ -1,17 +1,13 @@
 //- Идея - когда прокрутили до белой части шапки сайта, зафиксировать белую часть вверху
 
-//- инициализация noUiSlider для клона фильтра
-//- адаптив каталога
-//- переключение вида отображения товаров
-
+//- На главной пофиксить высоту слайдера и акции
 
 //- Важно!!! Если чистим папку dist, то после запуска сборщика нужно скопировать src/img/sprite.svg в dist/img/sprite.svg . Сборщик портит данный файл и спрайт некорректно отображается на сверстанной странице. Надо будет работу со спрайтами пофиксить.
 
 include ../includes/mixins
 
 //- Для pageType указать тип страницы
-- var pageType = 'catalog';
-
+- var pageType = 'product-page';
 
 //- home - главная страница
 if pageType === 'home'
@@ -21,7 +17,11 @@ if pageType === 'home'
 if pageType === 'catalog'
 	include catalog
 
-//- catalog
+//- catalog - Страница отдельного товара
+if pageType === 'product-page'
+	include product-page
+
+//- product-page
 
 
 //- index - для показа верстки
