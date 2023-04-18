@@ -643,6 +643,28 @@
     display: flex;
     justify-content: space-between;
     gap: 55px;
+
+    max-width: 100%;
+
+    .product-params__item {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 0;
+
+        max-width: 570px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #E4E4E4;
+        }
+    }
+
+    .product-params__name {
+        color: var(--color-text);
+    }
+
+    .product-params__value {
+        color: var(--more-than-a-week);
+    }
 }
 .product-page__main {
 }
@@ -657,12 +679,19 @@
     gap: 85px;
 
     width: 100%;
+    max-width: 100%;
 }
 .product-main__photo {
 }
 .product-photo {
     // max-width: calc(100% - 326px - 85px);
+    flex-grow: 1;
 }
+
+.product-photo__box {
+    display: block;
+}
+
 .product-photo__slider {
 }
 .slider-photo {
@@ -688,6 +717,8 @@
     max-width: 326px;
 }
 .product-info__item {
+    font-size: 14px;
+
     &:not(:last-child) {
         padding-bottom: 26px;
     }
@@ -700,23 +731,7 @@
         }
     }
 
-    .product-params__item {
-        padding-top: 8px;
-        padding-bottom: 8px;
-        margin-bottom: 0;
 
-        &:not(:last-child) {
-            border-bottom: 1px solid #E4E4E4;
-        }
-    }
-
-    .product-params__name {
-        color: var(--color-text);
-    }
-
-    .product-params__value {
-        color: var(--more-than-a-week);
-    }
 }
 .product-info__title {
     margin-bottom: 18px;
@@ -730,10 +745,31 @@
 }
 .product-params__item {
     font-size: 14px;
+
+    .tabs-descr__item & {
+        padding-bottom: 0;
+        border-bottom: 1px dashed #e4e4e4 !important;
+    }
 }
 .product-params__name {
+    .tabs-descr__item & {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-right: 8px;
+        margin-bottom: -10px;
+        display: inline-flex;
+        background-color: #fff;
+    }
 }
 .product-params__value {
+    .tabs-descr__item & {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+        margin-bottom: -10px !important;
+        display: inline-flex;
+        background-color: #fff;
+    }
 }
 .product-info__model {
 }
