@@ -1,0 +1,45 @@
+.table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 15px;
+
+    width: 100%;
+
+    border-spacing: 0;
+
+    tr {
+        border-radius: var(--brs6);
+        overflow: hidden;
+
+        &:nth-child(odd) {
+            background-color: #F9F9F9;
+        }
+    }
+
+    td {
+        padding: 20px 30px;
+    }
+}
+
+.table-wrapper {
+    position: relative;
+    overflow-x: auto;
+
+    @media (max-width: $break_xs) {
+        padding-top: 15px;
+
+        &::before {
+            position: absolute;
+            content: 'Если таблица не помещается, ее можно скроллить ←→';
+
+            top: 0;
+
+            font-size: 12px;
+            font-style: italic;
+            line-height: 1;
+        }
+    }
+
+
+}
