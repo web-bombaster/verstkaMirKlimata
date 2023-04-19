@@ -8,7 +8,7 @@
 include ../includes/mixins
 
 //- Для pageType указать тип страницы
-- var pageType = 'product-page';
+- var pageType = 'montage';
 
 //- home - главная страница
 if pageType === 'home'
@@ -22,8 +22,17 @@ if pageType === 'catalog'
 if pageType === 'product-page'
 	include product-page
 
-//- product-page
+//- contacts - контакты
+if pageType === 'contacts'
+	include contacts
 
+//- montage - Монтаж сплит систем
+if pageType === 'montage'
+	include montage
+
+//- product-page
+//- contacts
+//- montage
 
 //- index - для показа верстки
 if pageType === 'index'

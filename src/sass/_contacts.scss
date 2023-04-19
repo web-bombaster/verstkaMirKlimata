@@ -1,0 +1,111 @@
+.contacts {
+    margin-bottom: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (max-width: $break_sm) {
+        margin-bottom: 24px;
+
+        flex-direction: column;
+    }
+}
+.contacts__col {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+.contacts-col {
+    position: relative;
+    padding: 44px 49px;
+    border-radius: var(--brs6);
+
+    @media (max-width: $break_sm) {
+        padding: 27px 23px;
+    }
+
+    & > * {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    b, strong {
+        font-weight: 600;
+    }
+}
+.contacts__col--shop {
+    background-color: #E9F1F8;
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        right: 0;
+        width: 165px;
+        height: 206px;
+
+        background-image: url('../img/contacts/01.svg');
+        background-size: cover;
+        background-position: center;
+
+        @media (max-width: $break_md) {
+            width: 82.5px;
+            height: 103px;
+        }
+    }
+}
+.contacts-col__title {
+    margin-bottom: 19px;
+
+    font-size: 22px;
+    font-weight: 500;
+
+    @media (max-width: $break_sm) {
+        font-size: 18px;
+    }
+}
+.contacts-col__box {
+    position: relative;
+    z-index: 1;
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    & > * {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    p {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+.contacts__col--point {
+    background-color: #F5F5F6;
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        right: 0;
+        width: 205px;
+        height: 197px;
+
+        background-image: url('../img/contacts/02.svg');
+        background-size: cover;
+        background-position: center;
+
+        @media (max-width: $break_md) {
+            width: 102.5px;
+            height: 98.5px;
+        }
+    }
+}
+
+.contacts-map {
+    margin-top: auto;
+}

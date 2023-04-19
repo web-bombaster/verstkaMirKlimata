@@ -4,13 +4,12 @@
 
 let blazy = new Blazy();
 
-let homeContentImg = new Blazy({ 
+let homeContentImg = new Blazy({
 	breakpoints: [{
-		  width: 480 // max-width
-	, src: 'data-src-small'
-	 }
-	   , {
-		  width: 992 // max-width
-		, src: 'data-src-medium'
-}]
+		width: 480, // max-width
+		src: 'data-src-small'
+	}, {
+		width: 992, // max-width
+		src: 'data-src-medium'
+	}]
 });
