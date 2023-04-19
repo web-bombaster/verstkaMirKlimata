@@ -669,6 +669,10 @@
 }
 .product-main {
     width: calc(100% - 418px - 55px);
+
+    @media (max-width: $break_md) {
+        width: 100%;
+    }
 }
 .product-main__box {
     margin-bottom: 58px;
@@ -720,11 +724,13 @@
 .product-photo__thumbs {
 }
 .slider-thumbs {
-    height: 70px;
+    // height: 70px;
 }
 .slider-thumbs__item {
 }
 .slider-thumbs__img {
+    height: 70px !important;
+    width: auto !important;
 }
 .product-main__info {
 }
