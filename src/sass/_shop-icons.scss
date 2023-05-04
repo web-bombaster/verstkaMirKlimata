@@ -24,42 +24,73 @@
 	}
 }
 
-.shop-icons__link {
+.shop-icons__link, .shop-icons a {
 	position: relative;
 	font-size: 0;
 	z-index: 2;
 
-	.icon {
-		height: 25px;
-		width: 25px;
-		// width: auto;
-		display: inline-flex;
-	}
+	// .icon {
+	// 	height: 25px;
+	// 	width: 25px;
+	// 	// width: auto;
+	// 	display: inline-flex;
+	// }
 
-	&.disable {
-		.shop-icons__label {
-			color: #8D8D8D;
-			background-color: var(--color-bg-page);
-		}
-	}
+	// &.disable {
+	// 	.shop-icons__label {
+	// 		color: #8D8D8D;
+	// 		background-color: var(--color-bg-page);
+	// 	}
+	// }
 
-	&::after {
-		position: absolute;
-		content: '';
-		height: 44px;
-		width: 44px;
-		border: 1px solid #fff;
-		border-radius: var(--brs6);
+	// &::after {
+	// 	position: absolute;
+	// 	content: '';
+	// 	height: 44px;
+	// 	width: 44px;
+	// 	border: 1px solid #fff;
+	// 	border-radius: var(--brs6);
 
-		// z-index: -1;
+	// 	// z-index: -1;
 
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
+	// 	top: 50%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, -50%);
+	// }
 }
 
-.shop-icons__label {
+.shop-icons a {
+
+}
+
+.shop-icons__link .icon, .shop-icons a svg {
+	height: 25px;
+	width: 25px;
+	// width: auto;
+	display: inline-flex;
+}
+
+.shop-icons__link.disable .shop-icons__label, .shop-icons a.disable span {
+	color: #8D8D8D;
+	background-color: var(--color-bg-page);
+}
+
+.shop-icons__link::after, .shop-icons a::after {
+	position: absolute;
+	content: '';
+	height: 44px;
+	width: 44px;
+	border: 1px solid #fff;
+	border-radius: var(--brs6);
+
+	// z-index: -1;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.shop-icons__label, .shop-icons a span {
 	position: absolute;
 	top: -10px;
 	right: -8px;
