@@ -3,7 +3,6 @@
     border-radius: var(--brs6);
 
     .catalog-menu__btn {
-        // padding-left: initial;
         min-height: 57px;
         width: 100%;
         background-color: var(--color-accent);
@@ -21,10 +20,8 @@
 .catalog-menu__list {
     padding-left: 15px;
     padding-right: 15px;
-    // padding-bottom: 20px;
 
     box-sizing: border-box;
-    // overflow: hidden;
     background-color: #fff;
 
     @media (max-width: $break_lg) {
@@ -62,7 +59,7 @@
     }
 }
 
-.catalog-menu__item {
+.catalog-menu__item, .catalog-menu__list>li {
     &:first-child {
         margin-top: 20px;
 
@@ -80,7 +77,7 @@
     }
 }
 
-.catalog-menu__link {
+.catalog-menu__link, .catalog-menu__list>li>a {
     position: relative;
     display: flex;
     gap: 10px;
@@ -137,7 +134,7 @@
     }
 }
 
-.catalog-menu__icon {
+.catalog-menu__icon, .catalog-menu__list>li>a>svg:nth-child(1) {
     width: 36px;
     height: 26px;
 
@@ -147,7 +144,7 @@
     }
 }
 
-.catalog-menu__text {
+.catalog-menu__text, .catalog-menu__list>li>a>span {
     @media (max-width: $break_md) {
         font-size: 15px;
         text-transform: uppercase;
@@ -158,7 +155,7 @@
     }
 }
 
-.catalog-menu__toggle {
+.catalog-menu__toggle, .catalog-menu__list>li>a>svg:nth-child(2) {
     padding: 2px;
 
     position: absolute;
@@ -180,7 +177,7 @@
     // color: #000;
 }
 
-.catalog-menu__sub-menu {
+.catalog-menu__sub-menu, .catalog-menu__list li>ul {
     // margin-top: -10px;
     padding-left: 47px;
     display: flex;
@@ -200,16 +197,6 @@
         &.toggle {
             padding-bottom: 10px;
         }
-
-        // &::before {
-        //     position: absolute;
-        //     content: '';
-        //     width: 1px;
-        //     height: 100%;
-        //     top: 0;
-        //     left: 18px;
-        //     background-color: rgba(#000, .1);
-        // }
     }
 
     &.toggle {
@@ -222,7 +209,7 @@
 
 .catalog-menu__sub-menu-item {}
 
-.catalog-menu__sub-menu-link {
+.catalog-menu__sub-menu-link, .catalog-menu__list li>ul>li>a {
     display: block;
     padding-top: 5px;
     padding-bottom: 5px;
