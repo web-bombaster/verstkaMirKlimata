@@ -1,4 +1,19 @@
 //
+
+function adClassJsToggleSubMenuBtn() {
+    if (document.querySelector('.catalog-menu__list')) {
+        let toggleSubMenuBtns = document.querySelectorAll('.catalog-menu__list>li>ul');
+
+        toggleSubMenuBtns.forEach(function(element) {
+            element.parentElement.classList.add('jsToggleSubMenuBtn');
+        });
+    };
+
+};
+
+adClassJsToggleSubMenuBtn();
+
+
 function toggleMenu() {
 
     // Перебираем кнопки .jsToggleSubMenuBtn , вешаем на них по клику функцию открытия меню
@@ -27,7 +42,7 @@ function toggleMenu() {
 
         toggleMenuBtn.classList.toggle('toggle');
         toggleBody.classList.toggle('toggle');
-    }
+    };
 };
 
 toggleMenu();

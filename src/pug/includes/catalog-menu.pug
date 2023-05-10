@@ -17,9 +17,9 @@ mixin catalogMenulink(title, icon, toggle)
 		svg.catalog-menu__icon
 			use(xlink:href='img/sprite.svg#'+icon)
 		span.catalog-menu__text #{title}
-		if toggle == '1'
-			svg.catalog-menu__toggle
-				use(xlink:href='img/sprite.svg#arrow')
+		//- if toggle == '1'
+		svg.catalog-menu__toggle
+			use(xlink:href='img/sprite.svg#arrow')
 	block
 
 mixin catalogSubMenuList()
@@ -32,7 +32,7 @@ mixin catalogMenuSubItem(title)
 
 +catalogMenuList()
 	+catalogMenuItem('1')
-		+catalogMenulink('Кондиционеры', 'category-icion-01','1')
+		+catalogMenulink('Кондиционеры', 'category-icion-01','0')
 			+catalogSubMenuList()
 				+catalogMenuSubItem('Настенные сплит-системы')
 				+catalogMenuSubItem('Напольные сплит-системы')
@@ -47,7 +47,7 @@ mixin catalogMenuSubItem(title)
 				+catalogMenuSubItem('Мультизональные системы')
 				+catalogMenuSubItem('Мобильные кондиционеры')
 	+catalogMenuItem('1')
-		+catalogMenulink('Очистители', 'category-icion-02','1')
+		+catalogMenulink('Очистители', 'category-icion-02','0')
 			+catalogSubMenuList()
 				+catalogMenuSubItem('Очистители воздуха')
 				+catalogMenuSubItem('Мойки воздуха')
