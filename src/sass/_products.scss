@@ -957,6 +957,8 @@
         }
     }
 
+
+
     .credit {
         display: inline-flex;
 
@@ -1008,4 +1010,42 @@
 
         color: var(--color-accent);
     }
+}
+
+.buy i {
+    display: block;
+    width: 23px;
+    height: 20px;
+    background-image: url('../img/icons/shop-cart-w.svg');
+    background-size: cover;
+}
+
+.buy.isSent i {
+    background-image: url('../img/icons/check-w.svg');
+}
+
+.bookmark-icon, .bookmark i {
+    display: block;
+    width: 22px;
+    height: 18px;
+    background-image: url('../img/icons/shop-favourites.svg');
+    background-size: cover;
+}
+
+.bookmark.isSent i {
+    width: 22px;
+    height: 21px;
+    background-image: url('../img/icons/shop-favourites-fill-red.svg');
+}
+
+.compare-icon, .compare i {
+    display: block;
+    width: 23px;
+    height: 20px;
+    background-image: url('../img/icons/shop-compare.svg');
+    background-size: cover;
+}
+
+.compare.isSent i {
+    background-image: url('../img/icons/shop-compare-color.svg');
 }

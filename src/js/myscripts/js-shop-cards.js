@@ -8,10 +8,10 @@ document.querySelector('body').addEventListener("click", function (e) {
 
         if (btn.classList.contains('isSent')) {
             btn.setAttribute('title', 'Удалить из избранного');
-            btn.firstElementChild.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#shop-favourites-fill');
+            // btn.firstElementChild.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#shop-favourites-fill');
         } else {
             btn.setAttribute('title', 'Добавить в избранное');
-            btn.firstElementChild.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#shop-favourites');
+            // btn.firstElementChild.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#shop-favourites');
         };
     };
 
@@ -24,11 +24,11 @@ document.querySelector('body').addEventListener("click", function (e) {
 
         if (btn.classList.contains('isSent')) {
             btn.setAttribute('title', 'Добавлено в корзину');
-            btn.firstElementChild.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#check');
+            // btn.firstElementChild.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#check');
             btn.querySelector('span').innerText = 'В корзине';
         } else {
             btn.setAttribute('title', 'Добавить в корзину');
-            btn.firstElementChild.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#shop-cart');
+            // btn.firstElementChild.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#shop-cart');
             btn.querySelector('span').innerText = 'В корзину';
         };
     };

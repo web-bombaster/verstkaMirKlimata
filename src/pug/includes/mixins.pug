@@ -54,13 +54,16 @@ mixin productItemNoSlide(title, src, price, oldprice, discount, nalichie, populy
 
 				if vkorzine == '1'
 					.product-item__btn.buy.isSent(title="Добавлено в корзину")
-						svg
+
+						//- svg
 							use(xlink:href='img/sprite.svg#check')
+						i
 						span В корзине
 				if vkorzine == '0'
 					.product-item__btn.buy(title="Добавить в корзину")
-						svg
+						//- svg
 							use(xlink:href='img/sprite.svg#shop-cart')
+						i
 						span В корзину
 
 				.product-item__btn.credit
@@ -69,23 +72,27 @@ mixin productItemNoSlide(title, src, price, oldprice, discount, nalichie, populy
 				.product-item__btn-box
 					if izbranno == '1'
 						.product-item__btn.bookmark.isSent(title="Удалить из избранного")
-							svg
+							//- svg
 								use(xlink:href='img/sprite.svg#shop-favourites-fill')
+							i
 
 					if izbranno == '0'
 						.product-item__btn.bookmark(title="Добавить в избранное")
-							svg
+							//- svg
 								use(xlink:href='img/sprite.svg#shop-favourites')
+							i
 
 					if sravnenie == '1'
 						.product-item__btn.compare(title="Добавлено в сравнение")
-							svg
+							//- svg
 								use(xlink:href='img/sprite.svg#shop-compare')
+							i
 
 					if sravnenie == '0'
 						.product-item__btn.compare(title="Добавить в сравнение")
-							svg
+							//- svg
 								use(xlink:href='img/sprite.svg#shop-compare')
+							i
 
 
 //- Карточка товара слайдере товаров
@@ -144,13 +151,15 @@ mixin productItem(title, src, price, oldprice, discount, nalichie, populyarno, r
 
 				if vkorzine == '1'
 					.product-item__btn.buy.isSent(title="Добавлено в корзину")
-						svg
+						//- svg
 							use(xlink:href='img/sprite.svg#check')
+						i
 						span В корзине
 				if vkorzine == '0'
 					.product-item__btn.buy(title="Добавить в корзину")
-						svg
+						//- svg
 							use(xlink:href='img/sprite.svg#shop-cart')
+						i
 						span В корзину
 
 				.product-item__btn.credit
@@ -159,21 +168,25 @@ mixin productItem(title, src, price, oldprice, discount, nalichie, populyarno, r
 				.product-item__btn-box
 					if izbranno == '1'
 						.product-item__btn.bookmark.isSent(title="Удалить из избранного")
-							svg
+							//- svg
 								use(xlink:href='img/sprite.svg#shop-favourites-fill')
+							i
 
 					if izbranno == '0'
 						.product-item__btn.bookmark(title="Добавить в избранное")
-							svg
+							//- svg
 								use(xlink:href='img/sprite.svg#shop-favourites')
+							i
 
 					if sravnenie == '1'
 						.product-item__btn.compare(title="Добавлено в сравнение")
-							svg
+							//- svg
 								use(xlink:href='img/sprite.svg#shop-compare')
+							i
 
 					if sravnenie == '0'
 						.product-item__btn.compare(title="Добавить в сравнение")
-							svg
+							//- svg
 								use(xlink:href='img/sprite.svg#shop-compare')
+							i
 
