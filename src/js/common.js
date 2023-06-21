@@ -4,6 +4,7 @@ document.addEventListener(
 		// include './myscripts/preloader.js'
 		// include './myscripts/js-generation-code.js'
 		// include './myscripts/burger.js'
+		// include './myscripts/header.js'
 		// include './myscripts/quantity-checkbox.js'
 		// include './myscripts/mobile-menu.js'
 		// include './myscripts/range-init.js'
