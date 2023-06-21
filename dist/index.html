@@ -25,7 +25,7 @@
           <div class="header-top__contacts top-contacts"><a class="top-contacts__phone" href="tel:+78633008300">+7 (863) 300-8-300</a><a class="top-contacts__phone" href="tel:+79613300030">+7 (961) 330-00-30</a></div>
         </div>
       </div>
-      <div class="header__box header-box">
+      <div class="header__box header-box toggle">
         <div class="container header-box__container"><a class="header-box__logo" href="/"><img src="img/logo-header.png" alt=""></a>
           <div class="header-box__catalog-menu">
             <button class="catalog-menu__btn burger__menu-btn js-burger js-catalog-open-btn"><span></span>Каталог</button>
@@ -139,325 +139,696 @@
       </div>
       <div class="content">
         <div class="container">
-          <h1 class="section-header">Сплит-система Ultima Comfort EXP-07PN-</h1>
-          <div class="product-page">
-            <div class="product-page__main product-main">
-              <div class="product-main__box">
-                <div class="product-main__photo product-photo">
-                  <div class="product-photo__box">
-                    <div class="product-photo__slider slider-photo swiper">
-                      <div class="slider-photo__wrapper swiper-wrapper">
-                        <div class="slider-photo__img swiper-slide"><img src="img/products/01.jpg" alt=""></div>
-                        <div class="slider-photo__img swiper-slide"><img src="img/products/02.jpg" alt=""></div>
-                        <div class="slider-photo__img swiper-slide"><img src="img/products/03.jpg" alt=""></div>
-                        <div class="slider-photo__img swiper-slide"><img src="img/products/04.jpg" alt=""></div>
+          <h1 class="section-header">Настенные кондиционеры и сплит-системы</h1>
+          <div class="catalog">
+            <div class="catalog__filter filter">
+              <button class="btn filter__btn filter__btn-toggle burger__menu-btn js-burger jsFilterToggle" type="button" data-da="page-settings,0,1200"><span></span>Фильтр подбора</button>
+              <form class="filter__form">
+                <fieldset class="filter__fieldset">
+                  <legend class="filter__legend">Цена</legend>
+                  <div class="range">
+                    <div class="range__values">
+                      <input class="filter__input-text range__input range__input--min" type="text" data-value="15490" placeholder="от 15490">
+                      <input class="filter__input-text range__input range__input--max" type="text" data-value="775300" placeholder="до 775300">
+                    </div>
+                    <div class="range__slider-wrapper">
+                      <div class="range__slider"></div>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="filter__fieldset">
+                  <legend class="filter__legend">Мощность</legend>
+                  <div class="filter__box-checkbox">
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">15 м² - 1,5 кВТ</span><span class="js-element-count">(1174)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">20 м² - 2 кВТ</span><span class="js-element-count">(254)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">25 м² - 2,5 кВТ</span><span class="js-element-count">(3)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">30 м² - 3,0 кВТ</span><span class="js-element-count">(11)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">45 м² - 4,5 кВт</span><span class="js-element-count">(226)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">50 м² - 5,0 кВт</span><span class="js-element-count">(25)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">60 м² - 6,0 кВт</span><span class="js-element-count">(176)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">70 м² - 7,0 кВт</span><span class="js-element-count">(20)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">80 м² - 8,0 кВт</span><span class="js-element-count">(18)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">90 м² - 9,0 кВт</span><span class="js-element-count">(20)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">100 м² - 10,0 кВт</span><span class="js-element-count">(2)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">110 м² - 11,0 кВт</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">до 10,0 кВт</span><span class="js-element-count">(15)</span>
+                                </label>
+                  </div>
+                </fieldset>
+                <fieldset class="filter__fieldset">
+                  <legend class="filter__legend">Бренд</legend>
+                  <div class="filter__box-checkbox">
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Aero</span><span class="js-element-count">(23)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Aeronik</span><span class="js-element-count">(31)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">AirGreen</span><span class="js-element-count">(54)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Axioma</span><span class="js-element-count">(41)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Ballu</span><span class="js-element-count">(45)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Berlingtoun</span><span class="js-element-count">(31)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Bosch</span><span class="js-element-count">(76)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Centek</span><span class="js-element-count">(43)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Cherbrooke</span><span class="js-element-count">(78)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Daichi</span><span class="js-element-count">(21)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Daikin</span><span class="js-element-count">(9)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">EcoStar</span><span class="js-element-count">(42)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Electrolux</span><span class="js-element-count">(27)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Fujitsu</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Funai</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Gree</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Green</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Haier</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">HEC</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Hisense</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Hitachi</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">JAX</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Kentatsu</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Lessar</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">LG</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">MDV</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Midea</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Mitsubishi</span><span class="js-element-count">(1)</span>
+                                </label>
+                  </div>
+                </fieldset>
+                <fieldset class="filter__fieldset">
+                  <legend class="filter__legend">Компрессор</legend>
+                  <div class="filter__box-checkbox">
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Инвертор</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Не инвертор</span><span class="js-element-count">(0)</span>
+                                </label>
+                  </div>
+                </fieldset>
+                <fieldset class="filter__fieldset">
+                  <legend class="filter__legend">Wi-Fi управление</legend>
+                  <div class="filter__box-checkbox">
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">В комплекте</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Опционально</span><span class="js-element-count">(1)</span>
+                                </label>
+                  </div>
+                </fieldset>
+                <fieldset class="filter__fieldset">
+                  <legend class="filter__legend">Режим работы</legend>
+                  <div class="filter__box-checkbox">
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Охлаждение / Обогрев</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Только охлаждение</span><span class="js-element-count">(1)</span>
+                                </label>
+                  </div>
+                </fieldset>
+                <fieldset class="filter__fieldset">
+                  <legend class="filter__legend">Класс энергоэффективности</legend>
+                  <div class="filter__box-checkbox">
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">А</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">А+</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">А++</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">А+++</span><span class="js-element-count">(1)</span>
+                                </label>
+                  </div>
+                </fieldset>
+                <fieldset class="filter__fieldset">
+                  <legend class="filter__legend">Цвет</legend>
+                  <div class="filter__box-checkbox">
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Белый</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Серый</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Черный</span><span class="js-element-count">(1)</span>
+                                </label>
+                  </div>
+                </fieldset>
+                <fieldset class="filter__fieldset">
+                  <legend class="filter__legend">Страна сборки</legend>
+                  <div class="filter__box-checkbox">
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Китай</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Таиланд</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Малайзия</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Турция</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Чехия</span><span class="js-element-count">(1)</span>
+                                </label>
+                                <label class="filter__label">
+                                  <input class="filter__checkbox" type="checkbox"><span class="filter__checkbox-title">Япония</span><span class="js-element-count">(1)</span>
+                                </label>
+                  </div>
+                </fieldset>
+                <button class="btn filter__btn" type="submit">Применить</button>
+                <button class="btn btn--light filter__btn filter__btn-reset" type="reset">Сбросить все</button>
+              </form>
+            </div>
+            <div class="catalog__content">
+              <div class="collections"><a href="#">до 10 м²</a><a href="#">до 15 м²</a><a href="#">до 20 м²</a><a href="#">для больших помещений</a><a href="#">недорогие</a><a href="#">премиальные</a><a href="#">инверторные</a></div>
+              <div class="page-settings">
+                <div class="page-settings__sort page-sort">
+                  <div class="page-sort__current">
+                    <div class="title">Цена ниже</div>
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="page-sort__variants">
+                    <div class="variants-item toggle">Цена ниже</div>
+                    <div class="variants-item">Цена выше</div>
+                    <div class="variants-item">Хиты продаж</div>
+                    <div class="variants-item">Новинки</div>
+                    <div class="variants-item">В наличии</div>
+                  </div>
+                </div>
+                <div class="page-settings__count page-count">
+                  <div class="page-count__item toggle">12</div>
+                  <div class="page-count__item">24</div>
+                  <div class="page-count__item">36</div>
+                </div>
+                <div class="page-settings__view page-view">
+                  <div class="page-view__item toggle" data-class="grid">
+                    <svg class="icon page-view__icon">
+                      <use xlink:href="img/sprite.svg#psv-01"></use>
+                    </svg>
+                  </div>
+                  <div class="page-view__item" data-class="grid-line">
+                    <svg class="icon page-view__icon">
+                      <use xlink:href="img/sprite.svg#psv-02"></use>
+                    </svg>
+                  </div>
+                  <div class="page-view__item" data-class="grid-slim-line">
+                    <svg class="icon page-view__icon">
+                      <use xlink:href="img/sprite.svg#psv-03"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="products-inner"><a class="products-list__item product-item" href="#">
+                  <div class="product-item__head">
+                    <div class="product-item__labels labels">
+                      <div class="labels__item labels__popular">Популярно</div>
+                      <div class="labels__item labels__installment">Рассрочка</div>
+                    </div>
+                    <div class="product-item__img"><img src="img/products/01.jpg" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="product-item__middle">
+                    <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                    <div class="product-item__info">
+                      <div class="product-item__params product-params">
+                        <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__availability product-item__availability--true">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                        </svg>В наличии
                       </div>
                     </div>
-                    <div class="slider-photo__next swiper__next"></div>
-                    <div class="slider-photo__prev swiper__prev"></div>
                   </div>
-                  <div class="product-photo__thumbs slider-thumbs swiper">
-                    <div class="slider-thumbs__wrapper swiper-wrapper"><img class="slider-thumbs__img swiper-slide" src="img/products/01.jpg" alt=""><img class="slider-thumbs__img swiper-slide" src="img/products/02.jpg" alt=""><img class="slider-thumbs__img swiper-slide" src="img/products/03.jpg" alt=""><img class="slider-thumbs__img swiper-slide" src="img/products/04.jpg" alt=""></div>
+                  <div class="product-item__footer">
+                    <div class="product-item__price">16 400 ₽
+                    </div>
+                    <div class="product-item__actions">
+                      <div class="product-item__btn buy isSent" title="Добавлено в корзину"><i></i><span>В корзине</span></div>
+                      <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                      <div class="product-item__btn-box">
+                        <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
+                        <div class="product-item__btn compare" title="Добавлено в сравнение"><i></i></div>
+                      </div>
+                    </div>
+                  </div></a><a class="products-list__item product-item" href="#">
+                  <div class="product-item__head">
+                    <div class="product-item__labels labels">
+                    </div>
+                    <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"></div>
                   </div>
-                </div>
-                <div class="product-main__info product-info">
-                  <div class="product-info__item">
-                    <div class="product-info__title">Характеристики</div>
-                    <div class="product-item__params product-params">
-                      <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
-                    </div><a href="#">Все характеристики</a>
-                  </div>
-                  <div class="product-info__item">
-                    <div class="product-info__title">Модельный ряд</div>
-                    <div class="product-info__model product-model">
-                      <button class="product-model__item toggle">до 10 м²</button>
-                      <button class="product-model__item">до 15 м²</button><a class="product-model__item" href="#">до 20 м²</a>
-                      <button class="product-model__item">до 30 м²</button>
-                      <button class="product-model__item">до 35 м²</button>
+                  <div class="product-item__middle">
+                    <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                    <div class="product-item__info">
+                      <div class="product-item__params product-params">
+                        <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__availability">Под заказ</div>
                     </div>
                   </div>
-                  <div class="product-info__item">
-                    <div class="product-info__title">Бренд</div><a href="#">Ultima comfort</a>
+                  <div class="product-item__footer">
+                    <div class="product-item__price">757 500 ₽<span class="old-price">859 500 ₽</span><span class="discount">-24%</span>
+                    </div>
+                    <div class="product-item__actions">
+                      <div class="product-item__btn buy" title="Добавить в корзину"><i></i><span>В корзину</span></div>
+                      <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                      <div class="product-item__btn-box">
+                        <div class="product-item__btn bookmark isSent" title="Удалить из избранного"><i></i></div>
+                        <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
+                      </div>
+                    </div>
+                  </div></a><a class="products-list__item product-item" href="#">
+                  <div class="product-item__head">
+                    <div class="product-item__labels labels">
+                      <div class="labels__item labels__popular">Популярно</div>
+                    </div>
+                    <div class="product-item__img"><img src="img/products/03.jpg" alt="" loading="lazy"></div>
                   </div>
-                </div>
+                  <div class="product-item__middle">
+                    <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                    <div class="product-item__info">
+                      <div class="product-item__params product-params">
+                        <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__availability product-item__availability--true">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                        </svg>В наличии
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item__footer">
+                    <div class="product-item__price">57 500 ₽
+                    </div>
+                    <div class="product-item__actions">
+                      <div class="product-item__btn buy" title="Добавить в корзину"><i></i><span>В корзину</span></div>
+                      <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                      <div class="product-item__btn-box">
+                        <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
+                        <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
+                      </div>
+                    </div>
+                  </div></a><a class="products-list__item product-item" href="#">
+                  <div class="product-item__head">
+                    <div class="product-item__labels labels">
+                      <div class="labels__item labels__installment">Рассрочка</div>
+                    </div>
+                    <div class="product-item__img"><img src="img/products/04.jpg" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="product-item__middle">
+                    <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                    <div class="product-item__info">
+                      <div class="product-item__params product-params">
+                        <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__availability product-item__availability--true">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                        </svg>В наличии
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item__footer">
+                    <div class="product-item__price">67 900 ₽
+                    </div>
+                    <div class="product-item__actions">
+                      <div class="product-item__btn buy" title="Добавить в корзину"><i></i><span>В корзину</span></div>
+                      <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                      <div class="product-item__btn-box">
+                        <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
+                        <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
+                      </div>
+                    </div>
+                  </div></a><a class="products-list__item product-item" href="#">
+                  <div class="product-item__head">
+                    <div class="product-item__labels labels">
+                    </div>
+                    <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="product-item__middle">
+                    <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                    <div class="product-item__info">
+                      <div class="product-item__params product-params">
+                        <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__availability product-item__availability--true">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                        </svg>В наличии
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item__footer">
+                    <div class="product-item__price">22 400 ₽
+                    </div>
+                    <div class="product-item__actions">
+                      <div class="product-item__btn buy isSent" title="Добавлено в корзину"><i></i><span>В корзине</span></div>
+                      <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                      <div class="product-item__btn-box">
+                        <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
+                        <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
+                      </div>
+                    </div>
+                  </div></a><a class="products-list__item product-item" href="#">
+                  <div class="product-item__head">
+                    <div class="product-item__labels labels">
+                    </div>
+                    <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="product-item__middle">
+                    <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                    <div class="product-item__info">
+                      <div class="product-item__params product-params">
+                        <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__availability product-item__availability--true">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                        </svg>В наличии
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item__footer">
+                    <div class="product-item__price">22 400 ₽
+                    </div>
+                    <div class="product-item__actions">
+                      <div class="product-item__btn buy isSent" title="Добавлено в корзину"><i></i><span>В корзине</span></div>
+                      <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                      <div class="product-item__btn-box">
+                        <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
+                        <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
+                      </div>
+                    </div>
+                  </div></a><a class="products-list__item product-item" href="#">
+                  <div class="product-item__head">
+                    <div class="product-item__labels labels">
+                    </div>
+                    <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="product-item__middle">
+                    <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                    <div class="product-item__info">
+                      <div class="product-item__params product-params">
+                        <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__availability product-item__availability--true">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                        </svg>В наличии
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item__footer">
+                    <div class="product-item__price">22 400 ₽
+                    </div>
+                    <div class="product-item__actions">
+                      <div class="product-item__btn buy isSent" title="Добавлено в корзину"><i></i><span>В корзине</span></div>
+                      <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                      <div class="product-item__btn-box">
+                        <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
+                        <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
+                      </div>
+                    </div>
+                  </div></a><a class="products-list__item product-item" href="#">
+                  <div class="product-item__head">
+                    <div class="product-item__labels labels">
+                    </div>
+                    <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="product-item__middle">
+                    <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                    <div class="product-item__info">
+                      <div class="product-item__params product-params">
+                        <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__availability product-item__availability--true">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                        </svg>В наличии
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item__footer">
+                    <div class="product-item__price">22 400 ₽
+                    </div>
+                    <div class="product-item__actions">
+                      <div class="product-item__btn buy isSent" title="Добавлено в корзину"><i></i><span>В корзине</span></div>
+                      <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                      <div class="product-item__btn-box">
+                        <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
+                        <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
+                      </div>
+                    </div>
+                  </div></a><a class="products-list__item product-item" href="#">
+                  <div class="product-item__head">
+                    <div class="product-item__labels labels">
+                    </div>
+                    <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="product-item__middle">
+                    <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                    <div class="product-item__info">
+                      <div class="product-item__params product-params">
+                        <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__availability product-item__availability--true">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                        </svg>В наличии
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item__footer">
+                    <div class="product-item__price">22 400 ₽
+                    </div>
+                    <div class="product-item__actions">
+                      <div class="product-item__btn buy isSent" title="Добавлено в корзину"><i></i><span>В корзине</span></div>
+                      <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                      <div class="product-item__btn-box">
+                        <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
+                        <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
+                      </div>
+                    </div>
+                  </div></a><a class="products-list__item product-item" href="#">
+                  <div class="product-item__head">
+                    <div class="product-item__labels labels">
+                    </div>
+                    <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="product-item__middle">
+                    <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                    <div class="product-item__info">
+                      <div class="product-item__params product-params">
+                        <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__availability product-item__availability--true">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                        </svg>В наличии
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item__footer">
+                    <div class="product-item__price">22 400 ₽
+                    </div>
+                    <div class="product-item__actions">
+                      <div class="product-item__btn buy isSent" title="Добавлено в корзину"><i></i><span>В корзине</span></div>
+                      <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                      <div class="product-item__btn-box">
+                        <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
+                        <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
+                      </div>
+                    </div>
+                  </div></a><a class="products-list__item product-item" href="#">
+                  <div class="product-item__head">
+                    <div class="product-item__labels labels">
+                    </div>
+                    <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="product-item__middle">
+                    <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                    <div class="product-item__info">
+                      <div class="product-item__params product-params">
+                        <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__availability product-item__availability--true">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                        </svg>В наличии
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item__footer">
+                    <div class="product-item__price">22 400 ₽
+                    </div>
+                    <div class="product-item__actions">
+                      <div class="product-item__btn buy isSent" title="Добавлено в корзину"><i></i><span>В корзине</span></div>
+                      <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                      <div class="product-item__btn-box">
+                        <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
+                        <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
+                      </div>
+                    </div>
+                  </div></a><a class="products-list__item product-item" href="#">
+                  <div class="product-item__head">
+                    <div class="product-item__labels labels">
+                    </div>
+                    <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="product-item__middle">
+                    <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
+                    <div class="product-item__info">
+                      <div class="product-item__params product-params">
+                        <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
+                        <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
+                      </div>
+                      <div class="product-item__availability product-item__availability--true">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#shop-in-stock"></use>
+                        </svg>В наличии
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item__footer">
+                    <div class="product-item__price">22 400 ₽
+                    </div>
+                    <div class="product-item__actions">
+                      <div class="product-item__btn buy isSent" title="Добавлено в корзину"><i></i><span>В корзине</span></div>
+                      <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
+                      <div class="product-item__btn-box">
+                        <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
+                        <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
+                      </div>
+                    </div>
+                  </div></a>
               </div>
-              <div class="product-main__tabs product-tabs tabs">
-                <div class="product-tabs__btns tabs-btns">
-                  <div class="product-tabs__btn tabs-btn__item toggle">Описание</div>
-                  <div class="product-tabs__btn tabs-btn__item">Характеристики</div>
-                  <div class="product-tabs__btn tabs-btn__item">Гарантия и оплата</div>
-                  <div class="product-tabs__btn tabs-btn__item">Монтаж</div>
-                </div>
-                <div class="product-tabs__descrs tabs-descr">
-                  <div class="product-tabs__descr tabs-descr__item toggle">
-                    <p>Сплит-система Ultima Comfort EXP-07PN настенного типа серии «Explorer» обладает всеми самыми необходимыми режимами и функциям позволяющими максимально быстро создать благоприятный микроклимат в помещении.</p>
-                    <p>Внутренний блок наделён компактным лаконичным дизайном. Плавность линий придают внутреннему блоку утонченный и изысканный внешний вид. На лицевой панели блока расположен скрытый LED дисплей отображающий всю информацию о работе сплит-системы.</p>
-                    <p>ИК-пульт управления входит в комплект, с его помощью можно переключать функции, регулировать режимы, например, такие как:</p>
-                    <ul>
-                      <li>Ночной режим. В этом режиме работы кондиционер автоматически снижает уровень шума, за счёт снижения скорости вращения лопастей вентилятора. Таким образом увеличивается комфорт и снижается потребление электроэнергии.</li>
-                      <li>Автоматический перезапуск. Данная функция автоматически перезапустит кондиционер после отключения электропитания, восстановит работу с прежними настройками.</li>
-                      <li>Функция самодиагностики. Позволяет определить причину неисправности в кратчайшие сроки.</li>
-                      <li>Наружный блок оснащён высокоэффективным компрессором GREE не инверторного типа.</li>
-                    </ul>
-                  </div>
-                  <div class="product-tabs__descr tabs-descr__item">
-                    <div class="product-params__item"><span class="product-params__name">Бренд</span><span class="product-params__value">Ultima Comfort</span></div>
-                    <div class="product-params__item"><span class="product-params__name">Страна сборки</span><span class="product-params__value">Китай</span></div>
-                    <div class="product-params__item"><span class="product-params__name">Рекомендуемая площадь, м²</span><span class="product-params__value">20</span></div>
-                    <div class="product-params__item"><span class="product-params__name">Режим работы</span><span class="product-params__value">охлаждение / обогрев</span></div>
-                    <div class="product-params__item"><span class="product-params__name">Охлаждение, кВт</span><span class="product-params__value">2.15</span></div>
-                    <div class="product-params__item"><span class="product-params__name">Обогрев, кВт</span><span class="product-params__value">2.25</span></div>
-                    <div class="product-params__item"><span class="product-params__name">Компрессор</span><span class="product-params__value">не инвертор</span></div>
-                    <div class="product-params__item"><span class="product-params__name">Потребление при охлаждении, кВт</span><span class="product-params__value">0.66</span></div>
-                    <div class="product-params__item"><span class="product-params__name">Потребление при обогреве, кВт</span><span class="product-params__value">0.62</span></div>
-                    <div class="product-params__item"><span class="product-params__name">Электропитание, В/Ф/Гц</span><span class="product-params__value">220-240/1/50</span></div>
-                    <div class="product-params__item"><span class="product-params__name">Класс энергоэффективности (охлаждение)</span><span class="product-params__value">A</span></div>
-                    <div class="product-params__item"><span class="product-params__name">Класс энергоэффективности (обогрев)</span><span class="product-params__value">A</span></div>
-                    <div class="product-params__item"><span class="product-params__name">Энергоэффективность (охлаждение), EER</span><span class="product-params__value">3,22</span></div>
-                  </div>
-                  <div class="product-tabs__descr tabs-descr__item">
-                    <p>Гарантия и оплата</p>
-                  </div>
-                  <div class="product-tabs__descr tabs-descr__item">
-                    <p>Монтаж</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-page__aside product-aside">
-              <div class="product-aside__block product-block">
-                <div class="product-item__availability product-item__availability--true">
-                  <svg>
-                    <use xlink:href="img/sprite.svg#shop-in-stock"></use>
-                  </svg>В наличии
-                </div>
-                <div class="product-item__footer">
-                  <div class="product-item__price">57 500 руб<span class="old-price">59 500 руб</span><span class="discount">-24%</span></div>
-                  <div class="product-item__actions">
-                    <div class="product-item__btn buy" title="Добавить в корзину"><i></i><span>В корзину</span></div>
-                    <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
-                  </div>
-                  <div class="product-item__btn-box">
-                    <div class="product-item__btn bookmark" title="Добавить в избранное">В избранное<i></i></div>
-                    <div class="product-item__btn compare" title="Добавить в сравнение">Сравнить<i></i></div>
-                  </div>
-                </div>
-              </div>
-              <div class="product-aside__block product-block">
-                <div class="product-block__title">Способы доставки по Ростову-на-Дону</div>
-                <p> <a href='#'>Самовывоз из магазина</a> - бесплатно</p>
-                <p>Доставка курьером - завтра, 300 руб</p>
-                <p>от 10 000 руб - бесплатно по Ростову</p>
-              </div>
-              <div class="product-aside__block product-block">
-                <div class="product-block__title">
-                  <svg>
-                    <use xlink:href="img/sprite.svg#actions"></use>
-                  </svg>Акции для этого товара
-                </div>
-                <p><span>2% скидка</span> при оплате онлайн</p>
-                <p><span>2% скидка</span> на самовывоз</p>
-                <p><span>3% скидка</span> при оплате по счету</p>
-              </div>
-              <div class="product-aside__block product-block advantages">
-                <ul class="advantages__list">
-                  <li class="advantages__item"><img class="advantages__icon" src="img/advantages/01.svg" alt="">
-                    <div class="advantages__title">Персональные скидки</div>
-                  </li>
-                  <li class="advantages__item"><img class="advantages__icon" src="img/advantages/02.svg" alt="">
-                    <div class="advantages__title">Доставка по всей России</div>
-                  </li>
-                  <li class="advantages__item"><img class="advantages__icon" src="img/advantages/03.svg" alt="">
-                    <div class="advantages__title">Официальная гарантия</div>
-                  </li>
-                </ul>
+              <div class="products-more">
+                <button class="products-more__btn">Показать еще</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <div class="recommended-products">
-      <div class="container recommended-products__container">
-        <h2 class="section-header section-header__recommended-products">Рекомендуем посмотреть</h2>
-        <div class="recommended-products-slider">
-          <div class="recommended-products-slider__box jsRecommendedProductsSlider swiper">
-            <div class="recommended-products__list recommended-products-list swiper-wrapper"><a class="products-list__item product-item swiper-slide" href="#">
-                <div class="product-item__head">
-                  <div class="product-item__labels labels">
-                    <div class="labels__item labels__popular">Популярно</div>
-                    <div class="labels__item labels__installment">Рассрочка</div>
-                  </div>
-                  <div class="product-item__img"><img src="img/products/01.jpg" alt="" loading="lazy"></div>
-                </div>
-                <div class="product-item__middle">
-                  <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
-                  <div class="product-item__info">
-                    <div class="product-item__params product-params">
-                      <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
-                    </div>
-                    <div class="product-item__availability product-item__availability--true">
-                      <svg>
-                        <use xlink:href="img/sprite.svg#shop-in-stock"></use>
-                      </svg>В наличии
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item__footer">
-                  <div class="product-item__price">16 400 ₽
-                  </div>
-                  <div class="product-item__actions">
-                    <div class="product-item__btn buy isSent" title="Добавлено в корзину"><i></i><span>В корзине</span></div>
-                    <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
-                    <div class="product-item__btn-box">
-                      <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
-                      <div class="product-item__btn compare" title="Добавлено в сравнение"><i></i></div>
-                    </div>
-                  </div>
-                </div></a><a class="products-list__item product-item swiper-slide" href="#">
-                <div class="product-item__head">
-                  <div class="product-item__labels labels">
-                  </div>
-                  <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"></div>
-                </div>
-                <div class="product-item__middle">
-                  <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
-                  <div class="product-item__info">
-                    <div class="product-item__params product-params">
-                      <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
-                    </div>
-                    <div class="product-item__availability">Под заказ</div>
-                  </div>
-                </div>
-                <div class="product-item__footer">
-                  <div class="product-item__price">757 500 ₽<span class="old-price">859 500 ₽</span><span class="discount">-24%</span>
-                  </div>
-                  <div class="product-item__actions">
-                    <div class="product-item__btn buy" title="Добавить в корзину"><i></i><span>В корзину</span></div>
-                    <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
-                    <div class="product-item__btn-box">
-                      <div class="product-item__btn bookmark isSent" title="Удалить из избранного"><i></i></div>
-                      <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
-                    </div>
-                  </div>
-                </div></a><a class="products-list__item product-item swiper-slide" href="#">
-                <div class="product-item__head">
-                  <div class="product-item__labels labels">
-                    <div class="labels__item labels__popular">Популярно</div>
-                  </div>
-                  <div class="product-item__img"><img src="img/products/03.jpg" alt="" loading="lazy"></div>
-                </div>
-                <div class="product-item__middle">
-                  <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
-                  <div class="product-item__info">
-                    <div class="product-item__params product-params">
-                      <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
-                    </div>
-                    <div class="product-item__availability product-item__availability--true">
-                      <svg>
-                        <use xlink:href="img/sprite.svg#shop-in-stock"></use>
-                      </svg>В наличии
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item__footer">
-                  <div class="product-item__price">57 500 ₽
-                  </div>
-                  <div class="product-item__actions">
-                    <div class="product-item__btn buy" title="Добавить в корзину"><i></i><span>В корзину</span></div>
-                    <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
-                    <div class="product-item__btn-box">
-                      <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
-                      <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
-                    </div>
-                  </div>
-                </div></a><a class="products-list__item product-item swiper-slide" href="#">
-                <div class="product-item__head">
-                  <div class="product-item__labels labels">
-                    <div class="labels__item labels__installment">Рассрочка</div>
-                  </div>
-                  <div class="product-item__img"><img src="img/products/04.jpg" alt="" loading="lazy"></div>
-                </div>
-                <div class="product-item__middle">
-                  <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
-                  <div class="product-item__info">
-                    <div class="product-item__params product-params">
-                      <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
-                    </div>
-                    <div class="product-item__availability product-item__availability--true">
-                      <svg>
-                        <use xlink:href="img/sprite.svg#shop-in-stock"></use>
-                      </svg>В наличии
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item__footer">
-                  <div class="product-item__price">67 900 ₽
-                  </div>
-                  <div class="product-item__actions">
-                    <div class="product-item__btn buy" title="Добавить в корзину"><i></i><span>В корзину</span></div>
-                    <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
-                    <div class="product-item__btn-box">
-                      <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
-                      <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
-                    </div>
-                  </div>
-                </div></a><a class="products-list__item product-item swiper-slide" href="#">
-                <div class="product-item__head">
-                  <div class="product-item__labels labels">
-                  </div>
-                  <div class="product-item__img"><img src="img/products/02.jpg" alt="" loading="lazy"></div>
-                </div>
-                <div class="product-item__middle">
-                  <div class="product-item__title">Сплит система Mitsubishi Heavy SRK20ZSPR-S SRC20Z</div>
-                  <div class="product-item__info">
-                    <div class="product-item__params product-params">
-                      <div class="product-params__item"><span class="product-params__name">Площадь:</span><span class="product-params__value">20 м²</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Режим работы:</span><span class="product-params__value">Охлаждение и обогрев</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Гарантия:</span><span class="product-params__value">1,5 года</span></div>
-                      <div class="product-params__item"><span class="product-params__name">Инвертор:</span><span class="product-params__value">Да</span></div>
-                    </div>
-                    <div class="product-item__availability product-item__availability--true">
-                      <svg>
-                        <use xlink:href="img/sprite.svg#shop-in-stock"></use>
-                      </svg>В наличии
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item__footer">
-                  <div class="product-item__price">22 400 ₽
-                  </div>
-                  <div class="product-item__actions">
-                    <div class="product-item__btn buy isSent" title="Добавлено в корзину"><i></i><span>В корзине</span></div>
-                    <div class="product-item__btn credit"><span>Купить в рассрочку</span></div>
-                    <div class="product-item__btn-box">
-                      <div class="product-item__btn bookmark" title="Добавить в избранное"><i></i></div>
-                      <div class="product-item__btn compare" title="Добавить в сравнение"><i></i></div>
-                    </div>
-                  </div>
-                </div></a>
-            </div>
-          </div>
-          <div class="recommended-products__next swiper__next"></div>
-          <div class="recommended-products__prev swiper__prev"></div>
-        </div>
-      </div>
-    </div>
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__row">
@@ -511,5 +882,6 @@
       </div>
       <div class="mobile-menu__btns"></div>
     </div>
+    <div class="mobile-filter"></div>
   </body>
 </html>

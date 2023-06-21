@@ -29,6 +29,8 @@
 	font-size: 0;
 	z-index: 2;
 
+
+
 	// .icon {
 	// 	height: 25px;
 	// 	width: 25px;
@@ -60,7 +62,12 @@
 }
 
 .shop-icons a {
-
+	&:hover {
+		&::after {
+			// border: 1px solid var(--color-main);
+			box-shadow: 0px 0px 0px 2px var(--color-main);
+		}
+	}
 }
 
 .shop-icons__link .icon, .shop-icons a svg {
@@ -80,14 +87,20 @@
 	content: '';
 	height: 44px;
 	width: 44px;
-	border: 1px solid #fff;
-	border-radius: var(--brs6);
+	border: 1px solid var(--color-border);
+	border-radius: 50%;
 
 	// z-index: -1;
 
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
+	transition: .25s;
+
+	@media (max-width: 600px) {
+		border: 1px solid transparent;
+	}
 }
 
 .shop-icons__label, .shop-icons a span {
