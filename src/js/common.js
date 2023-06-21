@@ -20,5 +20,6 @@ document.addEventListener(
 		// include './myscripts/blazy-init.js'
 		// -include './myscripts/colorsCollection.js'
 		// include './myscripts/tabs.js'
+		// include './myscripts/modal.js'
 	}
 );
