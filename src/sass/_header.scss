@@ -112,6 +112,7 @@
 }
 
 .header-box__container {
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -131,7 +132,7 @@
 }
 
 .header-box__catalog-menu {
-	position: relative;
+	// position: relative;
 }
 
 // .catalog-menu {}
