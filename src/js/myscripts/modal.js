@@ -1,7 +1,7 @@
 const modal = function () {
 
-    // let modalBg = document.querySelector('.modal'); // оверлей с затемнением для попап окна
-    let modalInner = 'modal__inner'; // Класс подложки модального окна, по которой при щелчке будет закрываться окно
+    // let modalBg = document.querySelector('.my-modal'); // оверлей с затемнением для попап окна
+    let modalInner = 'my-modal__inner'; // Класс подложки модального окна, по которой при щелчке будет закрываться окно
     let closeModalButton = 'close-modal'; // Класс кнопок для скрытия окна
     let noScroll = 'no-scroll'; // Класс no-scroll, который мы добавляем или скрываем у body при открытии модалки
 
@@ -9,8 +9,8 @@ const modal = function () {
     // Добавляем кнопки закрытия модалок в их разметку
     const btnCloseModal = function () {
         // Если  модальные окна есть в разметке
-        if (document.querySelectorAll('.modal-content').length > 0) {
-            const modalContent = document.querySelectorAll('.modal-content'); // Все модальные окна
+        if (document.querySelectorAll('.my-modal-content').length > 0) {
+            const modalContent = document.querySelectorAll('.my-modal-content'); // Все модальные окна
 
             // для каждого окна
             modalContent.forEach(element => {
@@ -29,9 +29,9 @@ const modal = function () {
     const closeModal = function () {
         // Вешаем обработчик на весь документ
         document.addEventListener('click', (e) => {
-            // Если содержит класс modal__inner или close-modal
+            // Если содержит класс my-modal__inner или close-modal
             if ((e.target.classList.contains(modalInner)) || (e.target.classList.contains(closeModalButton))) {
-                e.target.closest('.modal').classList.remove('show'); // Убираем активный класс с фона
+                e.target.closest('.my-modal').classList.remove('show'); // Убираем активный класс с фона
                 document.body.classList.remove(noScroll);
             }
         });

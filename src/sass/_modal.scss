@@ -1,4 +1,4 @@
-.modal {
+.my-modal {
 	// display: none;
 
 	position: fixed;
@@ -19,18 +19,18 @@
 
 
 
-.modal-content__top {
+.my-modal-content__top {
     img {
         width: 100%;
     }
 }
 
-.modal.show {
+.my-modal.show {
 	// display: block;
 	transform: translateY(0%);
 }
 
-.modal__inner {
+.my-modal__inner {
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
@@ -47,11 +47,11 @@
 	}
 }
 
-.modal__content {
+.my-modal__content {
 
 }
 
-.modal-content {
+.my-modal-content {
     padding: 50px;
 
 	position: relative;
